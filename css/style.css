@@ -1,0 +1,147 @@
+html {
+	scroll-behavior: smooth;
+}
+
+html, body {
+	height: 100%;
+}
+
+h1 {
+	font-size: 72px;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-size: 48px;
+	line-height: 64px;
+	text-align: center;
+	width: 100%;
+}
+
+section {
+	padding-top: 250px;
+	padding-bottom: 250px;
+	background-position: center;
+	background-size: cover;
+}
+
+footer {
+	padding-top: 20px;
+	padding-bottom: 50px;
+	background-color: darkgray;
+}
+
+figure {
+	width: 90%;
+}
+
+ul.timeline > li > span {
+	font-weight: bold;
+}
+
+ul.timeline > li > span .float-right {
+	margin-left: 10px;
+}
+
+#presentation {
+	background-image: url('../images/bg/office.jpg'); /* Source: https://pixabay.com/photos/chairs-contemporary-furniture-2181960/ */
+}
+
+#skills {
+	background-image: url('../images/bg/laptop.jpg'); /* Source: https://pixabay.com/photos/macbook-laptop-computer-technology-2617705/ */
+}
+
+#career {
+	background-image: url('../images/bg/plane.jpg'); /* Source: https://pixabay.com/photos/plane-trip-journey-explore-841441/ */
+}
+
+#projects {
+	background-image: url('../images/bg/board.jpg'); /* Source: https://pixabay.com/photos/board-electronics-computer-453758/ */
+}
+
+.separator {
+	height:10px;
+	background-color: black;
+}
+
+.title {
+	font-size: 36px;
+}
+
+.main {
+	width: 100%;
+	background-color: white;
+	border-radius: 25px;
+	padding: 10px;
+}
+
+.rating span {
+	  color: orange;
+}
+
+.timeline tr {
+	position: relative;
+}
+
+.has-top:after, .has-bottom:after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: -10px;
+	width: 20px;
+	height: 20px;
+	border: 3px solid cyan;
+	border-radius: 50%;
+}
+
+.has-top:before, .has-bottom:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: 2px;
+	height: 50%;
+	background-color: gray;
+}
+
+.has-top:before {
+	top: 0;
+}
+
+.has-bottom:before {
+	bottom: 0;
+}
+
+.has-top.has-bottom:before {
+	height: 100%;
+}
+
+@media (max-width: 767px) {
+	h1 {
+		font-size: 60px;
+	}
+	
+	h2 {
+		font-size: 32px;
+	}
+	
+	.main {
+		text-align: center;
+	}
+	
+	#career .main {
+		text-align: left;
+	}
+	
+	.skills {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (max-width: 991px) {
+	#photo {
+		max-width: 50%;
+	}
+}
