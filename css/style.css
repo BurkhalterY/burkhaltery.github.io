@@ -17,6 +17,11 @@ h2 {
 	line-height: 64px;
 	text-align: center;
 	width: 100%;
+	text-shadow: 2px 2px 4px white;
+}
+
+h2.text-light {
+	text-shadow: 2px 2px 4px black;
 }
 
 h5 {
@@ -132,6 +137,10 @@ ul.timeline > li > span .float-right {
 	
 	h2 {
 		font-size: 32px;
+	}
+
+	.title {
+		font-size: 24px;
 	}
 	
 	.main {
