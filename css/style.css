@@ -19,6 +19,10 @@ h2 {
 	width: 100%;
 }
 
+h5 {
+	line-height: 0;
+}
+
 section {
 	padding-top: 250px;
 	padding-bottom: 250px;
@@ -34,6 +38,10 @@ footer {
 
 figure {
 	width: 90%;
+}
+
+img.icon {
+	width: 30px;
 }
 
 ul.timeline > li > span {
