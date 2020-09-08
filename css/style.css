@@ -54,19 +54,31 @@ ul.timeline > li > span .float-right {
 }
 
 #presentation {
-	background-image: url('../images/bg/office.jpg'); /* Source: https://pixabay.com/photos/chairs-contemporary-furniture-2181960/ */
+	/* Source : https://www.svgbackgrounds.com */
+	background-color: #ffffff;
+	background-image: url('../images/svg/presentation.svg');
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 #skills {
-	background-image: url('../images/bg/laptop.jpg'); /* Source: https://pixabay.com/photos/macbook-laptop-computer-technology-2617705/ */
+	background-color: #98fb98;
+	background-image: url('../images/svg/skills.svg');
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 #career {
-	background-image: url('../images/bg/plane.jpg'); /* Source: https://pixabay.com/photos/plane-trip-journey-explore-841441/ */
+	background-color: #87ceeb;
+	background-image: url('../images/svg/career.svg');
 }
 
+
 #projects {
-	background-image: url('../images/bg/board.jpg'); /* Source: https://pixabay.com/photos/board-electronics-computer-453758/ */
+	background-color: #4682b4;
+	background-image: url('../images/svg/projects.svg');
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 .separator {
