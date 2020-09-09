@@ -41,6 +41,10 @@ footer {
 	background-color: darkgray;
 }
 
+img.skill {
+	width: 75%;
+}
+
 img.icon {
 	width: 30px;
 }
