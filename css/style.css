@@ -38,7 +38,8 @@ section {
 footer {
 	padding-top: 20px;
 	padding-bottom: 50px;
-	background-color: darkgray;
+	color: white;
+	background-image: url('../images/svg/footer.svg');
 }
 
 img.skill {
@@ -59,7 +60,7 @@ ul.timeline > li > span .float-right {
 
 #presentation {
 	/* Source : https://www.svgbackgrounds.com */
-	background-color: #ffffff;
+	background-color: #fff;
 	background-image: url('../images/svg/presentation.svg');
 	background-attachment: fixed;
 	background-size: cover;
@@ -77,9 +78,8 @@ ul.timeline > li > span .float-right {
 	background-image: url('../images/svg/career.svg');
 }
 
-
 #projects {
-	background-color: #4682b4;
+	background-color: #321185;
 	background-image: url('../images/svg/projects.svg');
 	background-attachment: fixed;
 	background-size: cover;
