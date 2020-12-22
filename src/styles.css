@@ -1,0 +1,50 @@
+html, body {
+	height: 100%;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-size: 48px;
+	line-height: 64px;
+	text-align: center;
+	width: 100%;
+	text-shadow: 2px 2px 4px white;
+}
+
+h2.text-light {
+	text-shadow: 2px 2px 4px black;
+}
+
+section {
+	padding-top: 250px;
+	padding-bottom: 250px;
+	background-position: center;
+	background-size: cover;
+}
+
+.separator {
+	height:10px;
+	background-color: black;
+}
+
+.main {
+	width: 100%;
+	background-color: white;
+	border-radius: 25px;
+	padding: 10px;
+}
+
+@media (max-width: 767px) {
+	h2 {
+		font-size: 32px;
+	}
+
+	.title {
+		font-size: 24px;
+	}
+	
+	.main {
+		text-align: center;
+	}
+}
