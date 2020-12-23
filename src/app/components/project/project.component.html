@@ -2,7 +2,7 @@
 	<a target="_blank" href="{{ project.Url }}"><img class="card-img-top" src="/assets/projects/{{ project.Image }}" alt="{{ project.Name }}" title="{{ project.Name }}"></a>
 	<div class="card-body">
 		<h5 class="card-title">{{ project.Name }}</h5>
-		<img *ngFor="let skill of project.Skills" src="/assets/skills/{{ skill.Icon }}" alt="{{ skill.Name }}" title="{{ skill.Name }}" class="icon" />
+		<img *ngFor="let skill of skills" src="/assets/skills/{{ skill.Icon }}" alt="{{ skill.Name }}" title="{{ skill.Name }}" class="icon" />
 		<span class="card-text float-right d-none d-sm-block">{{ project.Date }}</span>
 		<p class="card-text text-center" innerHTML="{{ project.Description }}"></p>
 	</div>

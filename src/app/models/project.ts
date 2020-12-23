@@ -5,7 +5,7 @@ export interface Project
 	Name: string,
 	Image: string,
 	Url: string,
-	Skills: Array<Skill>,
+	Skills: Array<string>,
 	Date: string,
 	Pro: boolean,
 	Favorite: boolean,

@@ -12,7 +12,7 @@
 									<figure class="mx-1">
 										<img src="/assets/skills/{{ skill.Icon }}" alt="{{ skill.Name }}" title="{{ skill.Name }}" class="img-fluid skill">
 										<figcaption class="rating">
-											<div *ngIf="skill.Note >= 0">
+											<div *ngIf="skill.Note >= 0" title="{{ skill.Note }} ⭐">
 												<div class="gray-stars">
 													<img class="img-fluid" src="/assets/misc/stars.png" alt="{{ skill.Note }} stars" />
 												</div>
