@@ -2,12 +2,21 @@
 	{
 		"Name": "EPSIC Simulator",
 		"Image": "epsic-simulator.png",
-		"Url": "https://www.normalux.ch",
+		"Url": "https://github.com/BurkhalterY/EPSIC-Simulator/releases",
 		"Skills": ["Unity", "C#"],
 		"Date": "janv. – juin 2020",
 		"Pro": false,
 		"Favorite": false,
 		"Description": "Un jeu se déroulant à l'école professionnelle et dont le but est de répondre à des questions afin d'obtenir des points et des compétences pour pouvoir sortir."
+	}, {
+		"Name": "Japonais.normalux.ch",
+		"Image": "japonais.png",
+		"Url": "https://japonais.normalux.ch",
+		"Skills": ["CodeIgniter"],
+		"Date": "avr. – mai 2020",
+		"Pro": false,
+		"Favorite": false,
+		"Description": "Un site de révision. Il est possible de s'exercer soit avec des flashcards, soit en traçant directement les caractères."
 	}, {
 		"Name": "Bataille navale",
 		"Image": "bataille-navale.png",
