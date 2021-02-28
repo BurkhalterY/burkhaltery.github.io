@@ -1,0 +1,29 @@
+<section>
+	<div class="container h-75">
+		<h2 class="text-light">Quelques projets</h2>
+		<div class="row justify-content-center align-items-center h-100">
+			<div class="row main shadow">
+				<div class="col-lg-12">
+					<h3>Sélection</h3>
+					<div class="row">
+						<app-project *ngFor="let project of _projectsService.getFavorite().reverse()" [project]="project" class="col-lg-3 col-md-6"></app-project>
+					</div>
+					<hr>
+				</div>
+				<div class="col-lg-12">
+					<h3>Privé et école</h3>
+					<div class="row">
+						<app-project *ngFor="let project of _projectsService.getPrivate()" [project]="project" class="col-lg-3 col-md-6"></app-project>
+					</div>
+					<hr>
+				</div>
+				<div class="col-lg-12">
+					<h3>Professionnel</h3>
+					<div class="row">
+						<app-project *ngFor="let project of _projectsService.getPro()" [project]="project" class="col-lg-3 col-md-6"></app-project>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

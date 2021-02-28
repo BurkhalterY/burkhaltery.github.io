@@ -1,0 +1,47 @@
+section {
+	background-color: #98fb98;
+	background-image: url('/assets/svg/skills.svg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+h2 {
+	text-shadow: 2px 2px 4px black;
+}
+
+.skill {
+	width: 75%;
+}
+
+.rating {
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.gold-stars, .gray-stars {
+	position: absolute;
+	left: 12.5%;
+}
+
+.gold-stars img, .gray-stars img {
+	width: 75px;
+}
+
+.gold-stars-container {
+	overflow: hidden;
+}
+
+.gray-stars {
+	filter: grayscale(100%);
+}
+
+.level {
+	white-space: pre-wrap;
+}
+
+@media (max-width: 767px) {
+	.skills {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
