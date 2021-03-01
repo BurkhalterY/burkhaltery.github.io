@@ -36,9 +36,9 @@
 		"Favorite": false,
 		"Description": "Petite application Android qui exploite une faille dans le jeu <a target=\"_blank\" href=\"https://useyourwords.lol\">Use Your Words</a> et permet quelques triches."
 	}, {
-		"Name": "Prog.normalux.ch",
+		"Name": "Epsic.burkhalter.dev",
 		"Image": "prog-normalux.png",
-		"Url": "https://prog.normalux.ch",
+		"Url": "https://epsic.burkhalter.dev/",
 		"Skills": ["PHP"],
 		"Date": "janv. – juin 2019",
 		"Pro": false,
