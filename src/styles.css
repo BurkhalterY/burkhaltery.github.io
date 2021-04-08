@@ -2,6 +2,10 @@ html, body {
 	height: 100%;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 h2 {
 	text-transform: uppercase;
 	font-family: sans-serif;
