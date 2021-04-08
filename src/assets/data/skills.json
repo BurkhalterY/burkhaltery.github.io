@@ -45,7 +45,7 @@
 	{ "Name": "Français", "Category": "Langues", "Icon": "fr.png", "Note": -1, "Level": "Langue\nmaternelle", "Active": true },
 	{ "Name": "Anglais", "Category": "Langues", "Icon": "en_us.png", "Note": -1, "Level": "B1", "Active": true },
 
-	{ "Name": "Record au Rubik's Cube 3x3", "Category": "Hors informatique", "Icon": "rubiks-cube.png", "Note": -1, "Level": "~60 s", "Active": false },
+	{ "Name": "Record au Rubik's Cube 3x3", "Category": "Hors informatique", "Icon": "rubiks-cube.png", "Note": -1, "Level": "~60'", "Active": false },
 
 	{ "Name": "Photoshop", "Category": "Todo", "Icon": "photoshop.png", "Note": -1, "Level": "", "Active": false },
 	{ "Name": "Illustrator", "Category": "Todo", "Icon": "illustrator.png", "Note": -1, "Level": "", "Active": false },
