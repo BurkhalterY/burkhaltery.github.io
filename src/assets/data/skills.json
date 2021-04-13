@@ -32,7 +32,7 @@
 	{ "Name": "Word", "Category": "Microsoft Office", "Icon": "word.png", "Note": 4.5, "Level": "", "Active": true },
 	{ "Name": "Excel", "Category": "Microsoft Office", "Icon": "excel.png", "Note": 5, "Level": "", "Active": true },
 	{ "Name": "PowerPoint", "Category": "Microsoft Office", "Icon": "powerpoint.png", "Note": 5, "Level": "", "Active": true },
-	{ "Name": "Publisher", "Category": "Microsoft Office", "Icon": "access.png", "Note": 4.5, "Level": "", "Active": true },
+	{ "Name": "Publisher", "Category": "Microsoft Office", "Icon": "publisher.png", "Note": 4.5, "Level": "", "Active": true },
 	{ "Name": "Access", "Category": "Microsoft Office", "Icon": "access.png", "Note": 4.5, "Level": "", "Active": true },
 	{ "Name": "VBA", "Category": "Microsoft Office", "Icon": "vba.png", "Note": 3, "Level": "", "Active": true },
 
