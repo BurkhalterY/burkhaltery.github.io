@@ -108,6 +108,15 @@
 		"Favorite": false,
 		"Description": "Parmi mes premiers essais en programmation. Oui c'est étonnant, j'ai programmé en ActionScript sur Flash avant de toucher au HTML."
 	}, {
+		"Name": "Swiss Emergency Lighting",
+		"Image": "els.png",
+		"Url": "https://emergencylighting.ch",
+		"Skills": ["CodeIgniter"],
+		"Date": "Swiss Emergency Lighting Sàrl",
+		"Pro": true,
+		"Favorite": true,
+		"Description": "Le site web de l'entreprise Swiss Emergency Lighting, spécialisée dans l'éclairage de sécurité."
+	}, {
 		"Name": "Stock",
 		"Image": "orif-stock.png",
 		"Url": "https://stock.sectioninformatique.ch",

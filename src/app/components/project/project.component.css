@@ -2,6 +2,10 @@ img.icon {
 	width: 30px;
 }
 
+.card-body {
+	padding-top: 10px;
+}
+
 h5 {
-	line-height: 0;
+	margin-bottom: 0;
 }
