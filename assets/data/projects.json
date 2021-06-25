@@ -16,7 +16,7 @@
 		"Date": "avr. – mai 2020",
 		"Pro": false,
 		"Favorite": false,
-		"Description": "Un site de révision. Il est possible de s'exercer soit avec des flashcards, soit en traçant directement les caractères."
+		"Description": "Un site de révision de japonais. Il est possible de s'exercer soit avec des flashcards, soit en traçant directement les caractères."
 	}, {
 		"Name": "Bataille navale",
 		"Image": "bataille-navale.png",
@@ -25,7 +25,7 @@
 		"Date": "nov. 2019",
 		"Pro": false,
 		"Favorite": true,
-		"Description": "Jeu réalisé dans le cadre de l'EPSIC. Contient quelques fonctionnalités supplémentaires telles que des sonars et des bombes nucléaires."
+		"Description": "Jeu réalisé dans le cadre de l'EPSIC. C'est un jeu de bataille navale classique avec quelques fonctionnalités supplémentaires telles que des sonars et des bombes nucléaires."
 	}, {
 		"Name": "Use Your Cheats",
 		"Image": "use-your-cheats.png",
@@ -38,12 +38,12 @@
 	}, {
 		"Name": "Epsic.burkhalter.dev",
 		"Image": "prog-normalux.png",
-		"Url": "https://epsic.burkhalter.dev/",
+		"Url": "https://epsic.burkhalter.dev",
 		"Skills": ["PHP"],
 		"Date": "janv. – juin 2019",
 		"Pro": false,
 		"Favorite": false,
-		"Description": "Un site qui réexplique les modules d'informatique que j'ai vu en première année. Dans le but d'aider mes collègues."
+		"Description": "Un site qui réexplique les modules d'informatique que j'ai vu en première année. Dans le but d'aider mes collègues. Depuis, chaque classe de première année l'utilise."
 	}, {
 		"Name": "TETRIS",
 		"Image": "tetris.png",
@@ -61,7 +61,7 @@
 		"Date": "avr. – mai 2018",
 		"Pro": false,
 		"Favorite": false,
-		"Description": "Un PAC-MAN développé en Java. Contient pas mal d'options."
+		"Description": "Un PAC-MAN développé from scratch en Java. Contient pas mal d'options."
 	}, {
 		"Name": "Machine à billes",
 		"Image": "machine-a-billes.jpg",
@@ -74,12 +74,12 @@
 	}, {
 		"Name": "Normalux.ch",
 		"Image": "normalux.png",
-		"Url": "https://www.normalux.ch/",
+		"Url": "https://www.normalux.ch",
 		"Skills": ["CodeIgniter"],
 		"Date": "janv. 2018",
 		"Pro": false,
 		"Favorite": true,
-		"Description": "Un site de jeu dans lequel il faut reproduire un dessin. Similaire à Pokedraw.net (down)."
+		"Description": "Un site de jeu dans lequel il faut reproduire un dessin en 45s selon un modèle (similaire à Pokedraw.net qui est maintenant down). Il y a plusieurs modes de jeu."
 	}, {
 		"Name": "Jeux en Just Basic",
 		"Image": "just-basic-space-invaders.png",
