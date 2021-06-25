@@ -43,6 +43,10 @@ section {
 	justify-content: start;
 }
 
+.pointer {
+	cursor: pointer;
+}
+
 @media (max-width: 767px) {
 	h2 {
 		font-size: 32px;
