@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Project } from '../../models/project';
 import { Skill } from '../../models/skill';
 import { SkillsService } from '../../services/skills.service';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
 	selector: 'app-project',
@@ -14,7 +15,7 @@ export class ProjectComponent implements OnInit {
 
 	public skills: Array<Skill> = [];
 
-	constructor(private _skillsService: SkillsService) { }
+	constructor(private _skillsService: SkillsService, private _modalService: NgbModal) { }
 
 	ngOnInit(): void {
 		for(let skill of this.project.Skills) {
@@ -22,4 +23,7 @@ export class ProjectComponent implements OnInit {
 		}
 	}
 
+	open(content) {
+		this._modalService.open(content, { size: 'lg', centered: true });
+	}
 }

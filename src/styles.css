@@ -39,6 +39,10 @@ section {
 	padding: 10px;
 }
 
+.modal-footer {
+	justify-content: start;
+}
+
 @media (max-width: 767px) {
 	h2 {
 		font-size: 32px;

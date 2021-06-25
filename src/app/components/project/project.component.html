@@ -1,9 +1,32 @@
 <div class="card {{ project.Favorite ? 'border-warning' : '' }} my-3">
-	<a target="_blank" href="{{ project.Url }}"><img class="card-img-top" src="/assets/projects/{{ project.Image }}" alt="{{ project.Name }}" title="{{ project.Name }}"></a>
+	<img class="card-img-top" src="/assets/projects/{{ project.Image }}" alt="{{ project.Name }}" title="{{ project.Name }}" (click)="open(modal)" />
 	<div class="card-body">
-		<h5 class="card-title">{{ project.Name }}</h5>
-		<img *ngFor="let skill of skills" src="/assets/skills/{{ skill.Icon }}" alt="{{ skill.Name }}" title="{{ skill.Name }}" class="icon" />
-		<small class="card-text text-small float-right d-none d-sm-block">{{ project.Date }}</small>
-		<p class="card-text text-center" innerHTML="{{ project.Description }}"></p>
+		<h5 class="card-title text-center">{{ project.Name }}</h5>
 	</div>
 </div>
+
+<ng-template #modal let-modal>
+	<div class="modal-header text-center">
+		<h4 class="modal-title w-100">{{ project.Name }}</h4>
+		<button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+			<span aria-hidden="true">×</span>
+		</button>
+	</div>
+	<div class="modal-body">
+		<div class="row">
+			<div class="col-lg-5">
+				<a target="_blank" href="{{ project.Url }}">
+					<img class="img-fluid" src="/assets/projects/{{ project.Image }}" alt="{{ project.Name }}" title="{{ project.Name }}" />
+				</a>
+			</div>
+			<div class="col-lg-7">
+				<p class="text-justify" innerHTML="{{ project.Description }}"></p>
+				<img *ngFor="let skill of skills" src="/assets/skills/{{ skill.Icon }}" alt="{{ skill.Name }}" title="{{ skill.Name }}" class="icon" />
+				<small class="text-small float-right d-none d-sm-block">{{ project.Date }}</small>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+    	<a target="_blank" href="{{ project.Url }}">{{ project.Url }}</a>
+	</div>
+</ng-template>

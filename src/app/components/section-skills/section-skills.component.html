@@ -5,7 +5,7 @@
 			<div class="row main shadow">
 				<div class="col-lg-12">
 					<div class="row">
-						<div class="col-lg-{{ category.Skills.length < 5 ? 6 : 12 }}" *ngFor="let category of _skillsService.getCategories()">
+						<div class="col-lg-{{ category.Skills.length < 5 ? 6 : 12 }}" *ngFor="let category of categories">
 							<h3>{{ category.Name }}</h3>
 							<div class="row skills justify-content-center justify-content-md-start">
 								<div *ngFor="let skill of category.Skills" class="text-center">

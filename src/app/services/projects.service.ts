@@ -8,7 +8,7 @@ import * as json from '../../assets/data/projects.json';
 })
 export class ProjectsService {
 
-	private projects = (json as any).default;;
+	private projects = (json as any).default;
 
 	constructor() { }
 

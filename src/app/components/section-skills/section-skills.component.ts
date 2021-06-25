@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SkillsService } from '../../services/skills.service';
+import { Category } from '../../models/category';
 
 @Component({
 	selector: 'app-section-skills',
@@ -8,9 +9,12 @@ import { SkillsService } from '../../services/skills.service';
 })
 export class SectionSkillsComponent implements OnInit {
 
-	constructor(public _skillsService: SkillsService) { }
+	public categories: Array<Category>;
+
+	constructor(private _skillsService: SkillsService) { }
 
 	ngOnInit(): void {
+		this.categories = this._skillsService.getCategories();
 	}
 
 }
