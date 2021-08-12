@@ -13,7 +13,7 @@
 	{ "Name": "Joomla!", "Category": "CMS", "Icon": "joomla.png", "Note": 2.5, "Level": "", "Active": true },
 	{ "Name": "PrestaShop", "Category": "CMS", "Icon": "prestashop.png", "Note": 3, "Level": "", "Active": true },
 
-	{ "Name": "Android Studio (Java)", "Category": "Applications mobiles", "Icon": "android-studio.png", "Note": 3.5, "Level": "", "Active": true },
+	{ "Name": "Android Studio", "Category": "Applications mobiles", "Icon": "android-studio.png", "Note": 3.5, "Level": "", "Active": true },
 	{ "Name": "Kotlin", "Category": "Applications mobiles", "Icon": "kotlin.png", "Note": 1.5, "Level": "", "Active": false },
 	
 	{ "Name": "C#", "Category": "Autres langages", "Icon": "csharp.png", "Note": 5, "Level": "", "Active": true },
