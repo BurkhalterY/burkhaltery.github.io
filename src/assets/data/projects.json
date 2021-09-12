@@ -1,5 +1,14 @@
 [
 	{
+		"Name": "epsic.burkhalter.dev",
+		"Image": "prog-normalux.png",
+		"Url": "https://epsic.burkhalter.dev",
+		"Skills": ["Angular"],
+		"Date": "janv. 2019 – En cours",
+		"Pro": false,
+		"Favorite": false,
+		"Description": "Un site qui réexplique les modules d'informatique que j'ai vu en première année. Dans le but d'aider mes collègues. Depuis, chaque classe de première année l'utilise."
+	}, {
 		"Name": "EPSIC Simulator",
 		"Image": "epsic-simulator.png",
 		"Url": "https://github.com/BurkhalterY/EPSIC-Simulator/releases",
@@ -9,7 +18,7 @@
 		"Favorite": false,
 		"Description": "Un jeu se déroulant à l'école professionnelle et dont le but est de répondre à des questions afin d'obtenir des points et des compétences pour pouvoir sortir."
 	}, {
-		"Name": "Japonais.normalux.ch",
+		"Name": "japonais.normalux.ch",
 		"Image": "japonais.png",
 		"Url": "https://japonais.normalux.ch",
 		"Skills": ["CodeIgniter"],
@@ -35,15 +44,6 @@
 		"Pro": false,
 		"Favorite": false,
 		"Description": "Petite application Android qui exploite une faille dans le jeu <a target=\"_blank\" href=\"https://useyourwords.lol\">Use Your Words</a> et permet quelques tricheries."
-	}, {
-		"Name": "Epsic.burkhalter.dev",
-		"Image": "prog-normalux.png",
-		"Url": "https://epsic.burkhalter.dev",
-		"Skills": ["PHP"],
-		"Date": "janv. – juin 2019",
-		"Pro": false,
-		"Favorite": false,
-		"Description": "Un site qui réexplique les modules d'informatique que j'ai vu en première année. Dans le but d'aider mes collègues. Depuis, chaque classe de première année l'utilise."
 	}, {
 		"Name": "TETRIS",
 		"Image": "tetris.png",
