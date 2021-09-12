@@ -6,25 +6,30 @@
 	{ "Name": "MySQL", "Category": "Développement web", "Icon": "mysql.png", "Note": 5, "Level": "", "Active": true },
 
 	{ "Name": "Bootstrap", "Category": "Frameworks", "Icon": "bootstrap.png", "Note": 4.5, "Level": "", "Active": true },
+	{ "Name": "jQuery", "Category": "Frameworks", "Icon": "jquery.png", "Note": 3.5, "Level": "", "Active": true },
 	{ "Name": "Angular", "Category": "Frameworks", "Icon": "angular.png", "Note": 4, "Level": "", "Active": true },
 	{ "Name": "CodeIgniter", "Category": "Frameworks", "Icon": "ci.png", "Note": 5, "Level": "", "Active": true },
+	{ "Name": "ASP.NET", "Category": "Frameworks", "Icon": "aspdotnet.png", "Note": 2.5, "Level": "", "Active": false },
 
-	{ "Name": "WordPress", "Category": "CMS", "Icon": "wordpress.png", "Note": 3, "Level": "", "Active": true },
-	{ "Name": "Joomla!", "Category": "CMS", "Icon": "joomla.png", "Note": 2.5, "Level": "", "Active": true },
-	{ "Name": "PrestaShop", "Category": "CMS", "Icon": "prestashop.png", "Note": 3, "Level": "", "Active": true },
+	{ "Name": "WordPress", "Category": "CMS", "Icon": "wordpress.png", "Note": 3, "Level": "", "Active": false },
+	{ "Name": "Joomla!", "Category": "CMS", "Icon": "joomla.png", "Note": 2.5, "Level": "", "Active": false },
+	{ "Name": "PrestaShop", "Category": "CMS", "Icon": "prestashop.png", "Note": 3, "Level": "", "Active": false },
 
-	{ "Name": "Android Studio", "Category": "Applications mobiles", "Icon": "android-studio.png", "Note": 3.5, "Level": "", "Active": true },
+	{ "Name": "Android Studio", "Category": "Applications mobiles", "Icon": "android-studio.png", "Note": 3.5, "Level": "", "Active": false },
 	{ "Name": "Kotlin", "Category": "Applications mobiles", "Icon": "kotlin.png", "Note": 1.5, "Level": "", "Active": false },
 	
 	{ "Name": "C#", "Category": "Autres langages", "Icon": "csharp.png", "Note": 5, "Level": "", "Active": true },
 	{ "Name": "Java", "Category": "Autres langages", "Icon": "java.png", "Note": 4.5, "Level": "", "Active": true },
 	{ "Name": "Python", "Category": "Autres langages", "Icon": "python.png", "Note": 3, "Level": "", "Active": true },
+	{ "Name": "Just Basic", "Category": "Autres langages", "Icon": "just-basic.png", "Note": 4.5, "Level": "", "Active": false },
 
 	{ "Name": "Windows", "Category": "Systèmes d'exploitation", "Icon": "windows.png", "Note": 5, "Level": "", "Active": true },
+	{ "Name": "CLI", "Category": "Systèmes d'exploitation", "Icon": "cmd.png", "Note": 3.5, "Level": "", "Active": true },
 	{ "Name": "Android", "Category": "Systèmes d'exploitation", "Icon": "android.png", "Note": 4.5, "Level": "", "Active": true },
 
 	{ "Name": "Firefox", "Category": "Logiciels", "Icon": "firefox.png", "Note": 5, "Level": "", "Active": true },
 	{ "Name": "Sublime Text", "Category": "Logiciels", "Icon": "sublimetext.png", "Note": 5, "Level": "", "Active": true },
+	{ "Name": "VirtualBox", "Category": "Logiciels", "Icon": "virtualbox.png", "Note": 3.5, "Level": "", "Active": true },
 	{ "Name": "Draw.io", "Category": "Logiciels", "Icon": "drawio.png", "Note": 4, "Level": "", "Active": true },
 
 	{ "Name": "Word", "Category": "Microsoft Office", "Icon": "word.png", "Note": 4.5, "Level": "", "Active": true },
@@ -36,12 +41,15 @@
 
 	{ "Name": "Paint.NET", "Category": "Image & vidéo", "Icon": "pdn.png", "Note": 4.5, "Level": "", "Active": true },
 	{ "Name": "Adobe Premiere Pro", "Category": "Image & vidéo", "Icon": "premierepro.png", "Note": 3.5, "Level": "", "Active": true },
+	{ "Name": "Flash", "Category": "Image & vidéo", "Icon": "flash-mx-2004.png", "Note": 4, "Level": "", "Active": false },
 
 	{ "Name": "GitHub", "Category": "Divers", "Icon": "github.png", "Note": 4, "Level": "", "Active": true },
 	{ "Name": "PhpMyAdmin", "Category": "Divers", "Icon": "phpmyadmin.png", "Note": 4, "Level": "", "Active": true },
 	{ "Name": "PHPUnit", "Category": "Divers", "Icon": "phpunit.png", "Note": 2.5, "Level": "", "Active": false },
-	{ "Name": "Arduino", "Category": "Divers", "Icon": "arduino.png", "Note": 3, "Level": "", "Active": true },
+	{ "Name": "Node.js", "Category": "Divers", "Icon": "nodejs.png", "Note": 4, "Level": "", "Active": false },
 	{ "Name": "Unity", "Category": "Divers", "Icon": "unity.png", "Note": 3.5, "Level": "", "Active": true },
+	{ "Name": "Odoo", "Category": "Divers", "Icon": "odoo.png", "Note": 2.5, "Level": "", "Active": false },
+	{ "Name": "Arduino", "Category": "Divers", "Icon": "arduino.png", "Note": 3, "Level": "", "Active": true },
 	
 	{ "Name": "Français", "Category": "Langues", "Icon": "fr.png", "Note": -1, "Level": "Langue\nmaternelle", "Active": true },
 	{ "Name": "Anglais", "Category": "Langues", "Icon": "en_us.png", "Note": -1, "Level": "B1", "Active": true },
@@ -52,9 +60,5 @@
 	{ "Name": "Adobe Photoshop", "Category": "Todo", "Icon": "photoshop.png", "Note": -1, "Level": "", "Active": false },
 	{ "Name": "Adobe Illustrator", "Category": "Todo", "Icon": "illustrator.png", "Note": -1, "Level": "", "Active": false },
 
-	{ "Name": "Flash", "Category": "None", "Icon": "flash-mx-2004.png", "Note": 4, "Level": "", "Active": false },
-	{ "Name": "Just Basic", "Category": "None", "Icon": "just-basic.png", "Note": 4.5, "Level": "", "Active": false },
-	{ "Name": "Node.js", "Category": "Divers", "Icon": "nodejs.png", "Note": 4, "Level": "", "Active": false },
-	{ "Name": "ASP.NET", "Category": "Frameworks", "Icon": "aspdotnet.png", "Note": 2.5, "Level": "", "Active": false },
 	{ "Name": "Default", "Category": "None", "Icon": "", "Note": -1, "Level": "", "Active": false }
 ]
