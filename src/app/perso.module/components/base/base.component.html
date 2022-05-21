@@ -1,11 +1,9 @@
 <section>
 	<div class="container h-75">
 		<div class="row justify-content-center align-items-center h-100">
-			<div class="row main shadow">
-				<a href="" routerLink="/yannis">^</a>
-				<a href="" routerLink="/yannis/collection">Collection</a>
-				<a href="" routerLink="/yannis/cubing">Cubing</a>
-				<a href="" routerLink="/yannis/lang">Langue</a>
+			<app-menu class="w-100"></app-menu>
+			<div class="row main-custom shadow">
+				<router-outlet></router-outlet>
 			</div>
 		</div>
 	</div>

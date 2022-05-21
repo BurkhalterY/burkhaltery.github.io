@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BaseComponent } from './components/base/base.component';
+import { MeComponent } from './components/me/me.component';
 import { CollectionComponent } from './components/collection/collection.component';
 import { CubingComponent } from './components/cubing/cubing.component';
-import { LangComponent } from './components/lang/lang.component';
-import { YannisComponent } from './components/yannis/yannis.component';
+import { SocialsComponent } from './components/socials/socials.component';
 
 const routes: Routes = [
   {
-    path: 'yannis',
+    path: 'aestetica',
     component: BaseComponent,
     children: [
-      { path: '', component: YannisComponent },
+      { path: '', component: MeComponent },
       { path: 'collection', component: CollectionComponent },
       { path: 'cubing', component: CubingComponent },
-      { path: 'lang', component: LangComponent }
+      { path: 'socials', component: SocialsComponent },
     ]
   }
 ];
