@@ -26,10 +26,10 @@
             <td>Ville</td>
             <td>Vevey, Suisse</td>
           </tr>
-          <tr>
+          <!-- <tr>
             <td>Statut</td>
             <td>Célibataire</td>
-          </tr>
+          </tr> -->
           <tr>
             <td>Langues</td>
             <td>🇫🇷 🇬🇧</td>

@@ -1,17 +1,15 @@
 <template>
-  <div class="text-center">
-    <h2 class="bg-white rounded px-10 py-5 mb-3 text-2xl inline-block">
-      Compétences
-    </h2>
-    <div class="flex">
-      <div v-for="category of categories" class="bg-white rounded m-3 p-3">
-        <h3 class="text-xl">{{ category.name }}</h3>
-        <div v-for="skill of category.skills">
-          <img
-            :src="`/skills/${skill.icon}`"
-            :alt="skill.name"
+  <div class="bg-white rounded px-5 py-2">
+    <h2 class="text-center my-2 text-2xl">Compétences</h2>
+    <div class="flex justify-center">
+      <div class="bg-white rounded m-3 p-3">
+        <div class="grid grid-cols-4 gap-6">
+          <div
+            v-for="skill of skills"
+            v-html="skill.svg"
+            class="fill-current w-16 mx-auto"
+            :style="`color: #${skill.hex};`"
             :title="skill.name"
-            class="w-16 h-16 object-contain mx-auto my-2"
           />
         </div>
       </div>
@@ -20,26 +18,26 @@
 </template>
 
 <script setup>
-const categories = [
-  {
-    name: "Web frontend",
-    skills: [
-      { name: "HTML 5", icon: "html.svg", level: 5 },
-      { name: "CSS 3", icon: "css.svg", level: 4 },
-      { name: "JavaScript", icon: "js.svg", level: 4 },
-      { name: "Bootstrap", icon: "bootstrap.svg", level: 4.5 },
-      { name: "Tailwind", icon: "tailwind.svg", level: 4.5 },
-      { name: "Vue.js", icon: "vue.svg", level: 4 },
-      { name: "Angular", icon: "angular.svg", level: 3.5 },
-    ],
-  },
-  {
-    name: "Web backend",
-    skills: [
-      { name: "PHP", icon: "php.svg", level: 4 },
-      { name: "MySQL", icon: "mysql.svg", level: 4.5 },
-      { name: "CodeIgniter", icon: "ci.svg", level: 4.5 },
-    ],
-  },
+import {
+  siCsharp,
+  siCss3,
+  siGit,
+  siHtml5,
+  siJavascript,
+  siMicrosoftoffice,
+  siMysql,
+  siPython,
+  siVuedotjs,
+} from "simple-icons/icons"
+
+const skills = [
+  siHtml5,
+  siCss3,
+  siJavascript,
+  siVuedotjs,
+  siMysql,
+  siCsharp,
+  siGit,
+  siMicrosoftoffice,
 ]
 </script>

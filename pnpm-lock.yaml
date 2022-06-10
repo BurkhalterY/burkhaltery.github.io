@@ -4,11 +4,13 @@ specifiers:
   '@vitejs/plugin-vue': ^2.3.3
   autoprefixer: ^10.4.7
   postcss: ^8.4.14
+  simple-icons: ^7.0.0
   tailwindcss: ^3.1.0
   vite: ^2.9.9
   vue: ^3.2.25
 
 dependencies:
+  simple-icons: 7.0.0
   vue: 3.2.37
 
 devDependencies:
@@ -770,6 +772,11 @@ packages:
     dependencies:
       queue-microtask: 1.2.3
     dev: true
+
+  /simple-icons/7.0.0:
+    resolution: {integrity: sha512-5jwnZ04C2PmdKrLe6HSZLmsmP77WvZtNau0hGgSqEi2pplcP3yiiE4/f0Emgix8tItWKsYkS1TQI75yZhr8Xjw==}
+    engines: {node: '>=0.12.18'}
+    dev: false
 
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
