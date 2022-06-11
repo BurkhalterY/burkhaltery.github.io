@@ -31,8 +31,12 @@ onMounted(() => {
 
     ctx.globalAlpha = 1
     for (let star of stars) {
-      star.x = (star.x + star.dx) % canvas.value.width
-      star.y = (star.y + star.dy) % canvas.value.height
+      star.x =
+        (((star.x + star.dx) % canvas.value.width) + canvas.value.width) %
+        canvas.value.width
+      star.y =
+        (((star.y + star.dy) % canvas.value.height) + canvas.value.height) %
+        canvas.value.height
       ctx.fillRect(star.x, star.y, 1, 1)
     }
   })

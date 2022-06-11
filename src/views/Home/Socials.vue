@@ -4,7 +4,7 @@
     <div class="grid grid-cols-3 gap-8">
       <a v-for="social of socials" target="_blank" :href="social.link">
         <img
-          :src="`/icons/socials/${social.icon}`"
+          :src="`/images/socials/${social.icon}`"
           :alt="social.name"
           :title="social.name"
           class="object-contain w-16 h-16"

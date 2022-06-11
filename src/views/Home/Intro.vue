@@ -1,13 +1,10 @@
 <template>
   <div class="bg-white rounded px-5 py-5">
     <div class="grid grid-cols-5 gap-5">
-      <div class="col-span-2">
-        <img
-          class="w-64 rounded"
-          src="https://burkhaltery.github.io/assets/misc/user.png"
-        />
+      <div class="sm:col-span-2">
+        <img class="w-64 rounded" src="/images/pp/aestetica.png" />
       </div>
-      <div class="col-span-3 font-mono">
+      <div class="col-span-4 sm:col-span-3 font-mono">
         <h1 class="text-3xl">Yannis</h1>
         <table class="w-full">
           <tr>
@@ -28,7 +25,9 @@
           </tr>
           <tr>
             <td>E-mail</td>
-            <td>yannis@burkhalter.dev</td>
+            <td>
+              <a href="mailto:yannis@burkhalter.dev">yannis@burkhalter.dev</a>
+            </td>
           </tr>
           <tr>
             <td>Discord</td>
@@ -45,6 +44,9 @@
           <tr>
             <td>Navigateur préféré</td>
             <td>Firefox</td>
+          </tr>
+          <tr>
+            <td>...</td>
           </tr>
         </table>
       </div>
