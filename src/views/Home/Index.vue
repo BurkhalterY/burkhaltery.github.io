@@ -6,8 +6,7 @@
 
 <script setup>
 import Intro from "./Intro.vue"
-import Career from "./Career.vue"
 import Hobbies from "./Hobbies.vue"
 
-const list = [Intro, Career]
+const list = [Intro]
 </script>
