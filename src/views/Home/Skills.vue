@@ -17,27 +17,4 @@
   </div>
 </template>
 
-<script setup>
-import {
-  siCsharp,
-  siCss3,
-  siGit,
-  siHtml5,
-  siJavascript,
-  siMicrosoftoffice,
-  siMysql,
-  siPython,
-  siVuedotjs,
-} from "simple-icons/icons"
-
-const skills = [
-  siHtml5,
-  siCss3,
-  siJavascript,
-  siVuedotjs,
-  siMysql,
-  siCsharp,
-  siGit,
-  siMicrosoftoffice,
-]
-</script>
+<script setup></script>

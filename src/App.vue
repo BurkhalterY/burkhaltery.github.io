@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen h-full bg-sky-400 flex flex-col">
+  <div class="min-h-screen h-full bg-black flex flex-col">
     <Home />
   </div>
 </template>
