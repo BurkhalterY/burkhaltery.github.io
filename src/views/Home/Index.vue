@@ -6,8 +6,8 @@
 
 <script setup>
 import Intro from "./Intro.vue"
-import Hobbies from "./Hobbies.vue"
+import Music from "./Music.vue"
 import Socials from "./Socials.vue"
 
-const list = [Intro, Socials]
+const list = [Intro, Music, Socials]
 </script>
