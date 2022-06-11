@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-white rounded px-10 py-5">
-    <div class="grid grid-cols-5 gap-4">
+  <div class="bg-white rounded px-5 py-5">
+    <div class="grid grid-cols-5 gap-5">
       <div class="col-span-2">
         <img
-          class="w-48 rounded"
+          class="w-64 rounded"
           src="https://burkhaltery.github.io/assets/misc/user.png"
         />
       </div>
@@ -26,14 +26,22 @@
             <td>Ville</td>
             <td>Vevey, Suisse</td>
           </tr>
-          <!-- <tr>
-            <td>Statut</td>
-            <td>Célibataire</td>
-          </tr> -->
+          <tr>
+            <td>E-mail</td>
+            <td>yannis@burkhalter.dev</td>
+          </tr>
+          <tr>
+            <td>Discord</td>
+            <td>aestetica#9521</td>
+          </tr>
           <tr>
             <td>Langues</td>
             <td>🇫🇷 🇬🇧</td>
           </tr>
+          <!-- <tr>
+            <td>Statut</td>
+            <td>Célibataire</td>
+          </tr> -->
           <tr>
             <td>Navigateur préféré</td>
             <td>Firefox</td>
