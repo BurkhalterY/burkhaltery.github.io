@@ -1,0 +1,190 @@
+{
+  "access": {
+    "name": "Microsoft Access",
+    "icon": "ms-access.svg"
+  },
+  "acrobat": {
+    "name": "Adobe Acrobat",
+    "icon": "adobe-acrobat.svg"
+  },
+  "afterEffect": {
+    "name": "Adobe After Effect",
+    "icon": "adobe-after-effect.svg"
+  },
+  "animate": {
+    "name": "Adobe Animate",
+    "icon": "adobe-animate.svg"
+  },
+  "arduino": {
+    "name": "Arduino",
+    "icon": "arduino.svg"
+  },
+  "android": {
+    "name": "Android",
+    "icon": "android.svg"
+  },
+  "androidStudio": {
+    "name": "Android Studio",
+    "icon": "android-studio.svg"
+  },
+  "angular": {
+    "name": "Angular",
+    "icon": "angular.svg"
+  },
+  "bootstrap": {
+    "name": "Bootstrap",
+    "icon": "bootstrap.svg"
+  },
+  "cli": {
+    "name": "CLI",
+    "icon": "cli.svg"
+  },
+  "code": {
+    "name": "Visual Studio Code",
+    "icon": "vsCode.svg"
+  },
+  "codeIgniter": {
+    "name": "CodeIgniter",
+    "icon": "codeigniter.svg"
+  },
+  "cSharp": {
+    "name": "C#",
+    "icon": "csharp.svg"
+  },
+  "css": {
+    "name": "CSS 3",
+    "icon": "css.svg"
+  },
+  "excel": {
+    "name": "Microsoft Excel",
+    "icon": "ms-excel.svg"
+  },
+  "flash": {
+    "name": "Adobe Flash",
+    "icon": "adobe-flash.svg"
+  },
+  "git": {
+    "name": "Git",
+    "icon": "git.svg"
+  },
+  "github": {
+    "name": "GitHub",
+    "icon": "github.svg"
+  },
+  "gitlab": {
+    "name": "GitLab",
+    "icon": "gitlab.svg"
+  },
+  "html": {
+    "name": "HTML 5",
+    "icon": "html.svg"
+  },
+  "illustrator": {
+    "name": "Adobe Illustrator",
+    "icon": "adobe-illustrator.svg"
+  },
+  "java": {
+    "name": "Java",
+    "icon": "java.svg"
+  },
+  "javascript": {
+    "name": "JavaScript",
+    "icon": "js.svg"
+  },
+  "jQuery": {
+    "name": "jQuery",
+    "icon": "jquery.svg"
+  },
+  "json": {
+    "name": "JSON",
+    "icon": "json.svg"
+  },
+  "justBasic": {
+    "name": "Just Basic",
+    "icon": "just-basic.jpg"
+  },
+  "kotlin": {
+    "name": "Kotlin",
+    "icon": "kotlin.svg"
+  },
+  "laravel": {
+    "name": "Laravel",
+    "icon": "laravel.svg"
+  },
+  "macOS": {
+    "name": "macOS",
+    "icon": "macos.svg"
+  },
+  "mySql": {
+    "name": "MySQL",
+    "icon": "mysql.svg"
+  },
+  "odoo": {
+    "name": "Odoo",
+    "icon": "odoo.svg"
+  },
+  "oneNote": {
+    "name": "Microsoft OneNote",
+    "icon": "ms-onenote.svg"
+  },
+  "paintDotNet": {
+    "name": "Paint.NET",
+    "icon": "pdn.webp"
+  },
+  "photoShop": {
+    "name": "Adobe Photoshop",
+    "icon": "adobe-photoshop.svg"
+  },
+  "php": {
+    "name": "PHP",
+    "icon": "php.svg"
+  },
+  "postgreSql": {
+    "name": "PostgreSQL",
+    "icon": "psql.svg"
+  },
+  "poweroint": {
+    "name": "Microsoft PowerPoint",
+    "icon": "ms-powerpoint.svg"
+  },
+  "premierePro": {
+    "name": "Adobe Premiere Pro",
+    "icon": "adobe-premiere-pro.svg"
+  },
+  "publisher": {
+    "name": "Microsoft Publisher",
+    "icon": "ms-publisher.svg"
+  },
+  "python": {
+    "name": "Python",
+    "icon": "python.svg"
+  },
+  "tailwind": {
+    "name": "Tailwind CSS",
+    "icon": "tailwind.svg"
+  },
+  "ubuntu": {
+    "name": "Ubuntu",
+    "icon": "ubuntu.svg"
+  },
+  "unity3d": {
+    "name": "Unity 3D",
+    "icon": "unity3d.svg"
+  },
+  "vba": {
+    "name": "Visual Basic for Applications",
+    "icon": "vba.svg"
+  },
+  "vueJs": {
+    "name": "Vue.js",
+    "icon": "vue.svg"
+  },
+  "windows": {
+    "name": "Windows",
+    "icon": "windows.svg"
+  },
+  "word": {
+    "name": "Microsoft Word",
+    "icon": "ms-word.svg"
+  }
+}
