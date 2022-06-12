@@ -37,7 +37,7 @@ onMounted(() => {
       star.y =
         (((star.y + star.dy) % canvas.value.height) + canvas.value.height) %
         canvas.value.height
-      ctx.fillRect(star.x, star.y, 1, 1)
+      ctx.fillRect(star.x, star.y, 1.5, 1.5)
     }
   })
 })
