@@ -9,5 +9,6 @@ import Intro from "./Intro.vue"
 import Music from "./Music.vue"
 import Socials from "./Socials.vue"
 
-const list = [Intro, Music, Socials]
+const isProd = import.meta.env.PROD
+const list = [Intro, ...(isProd ? [Music] : []), Socials]
 </script>

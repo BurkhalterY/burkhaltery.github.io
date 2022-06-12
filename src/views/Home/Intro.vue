@@ -37,10 +37,10 @@
             <td>Langues</td>
             <td>🇫🇷 🇬🇧</td>
           </tr>
-          <!-- <tr>
+          <tr v-if="isProd">
             <td>Statut</td>
             <td>Célibataire</td>
-          </tr> -->
+          </tr>
           <tr>
             <td>Navigateur préféré</td>
             <td>Firefox</td>
@@ -53,3 +53,7 @@
     </div>
   </div>
 </template>
+
+<script setup>
+const isProd = import.meta.env.PROD
+</script>
