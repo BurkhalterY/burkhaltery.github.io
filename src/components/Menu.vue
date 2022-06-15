@@ -18,22 +18,24 @@
 </template>
 
 <script setup>
+const isProd = import.meta.env.PROD
 const menu = [
   {
     name: "Présentation",
     route: "Home",
   },
-
   {
     name: "Parcours",
     route: "Career",
   },
-
-  {
-    name: "Musique",
-    route: "Music",
-  },
-
+  ...(isProd
+    ? [
+        {
+          name: "Musique",
+          route: "Music",
+        },
+      ]
+    : []),
   {
     name: "Réseaux sociaux",
     route: "Socials",
