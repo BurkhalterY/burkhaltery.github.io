@@ -1,0 +1,45 @@
+<template>
+  <div class="">
+    <h2 class="text-2xl text-center my-4 px-2 py-1 bg-white rounded">
+      Mes anime préférés
+    </h2>
+    <Ranking :items="anime" />
+  </div>
+</template>
+
+<script setup>
+import Ranking from "@/components/Ranking.vue"
+
+const anime = [
+  {
+    name: "Miraculous : les aventures de Ladybug et Chat Noir",
+    year: 2015,
+    image: "anime/mlb.jpg",
+  },
+  {
+    name: "Lastman",
+    year: 2016,
+    image: "anime/lastman.jpg",
+  },
+  {
+    name: "Steins;Gate",
+    year: 2011,
+    image: "anime/steins-gate.jpg",
+  },
+  {
+    name: "Mob Psycho 100",
+    year: 2016,
+    image: "anime/mob-psycho-100.jpg",
+  },
+  {
+    name: "Code Geass: Lelouch of the Rebellion",
+    year: 2006,
+    image: "anime/code-geass.jpg",
+  },
+  {
+    name: "Rick et Morty",
+    year: 2013,
+    image: "anime/rick-and-morty.jpg",
+  },
+]
+</script>

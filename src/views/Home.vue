@@ -37,7 +37,7 @@
             <td>Langues</td>
             <td>🇫🇷 🇬🇧</td>
           </tr>
-          <tr v-if="isProd">
+          <tr v-if="showFullMode">
             <td>Statut</td>
             <td>Célibataire</td>
           </tr>
@@ -55,5 +55,5 @@
 </template>
 
 <script setup>
-const isProd = import.meta.env.PROD
+const showFullMode = import.meta.env.VITE_SHOW_FULL_MODE === "true"
 </script>

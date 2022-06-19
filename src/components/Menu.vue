@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-const isProd = import.meta.env.PROD
+const showFullMode = import.meta.env.VITE_SHOW_FULL_MODE === "true"
 const menu = [
   {
     name: "Présentation",
@@ -28,11 +28,15 @@ const menu = [
     name: "Parcours",
     route: "Career",
   },
-  ...(isProd
+  ...(showFullMode
     ? [
         {
           name: "Musique",
           route: "Music",
+        },
+        {
+          name: "Anime",
+          route: "Anime",
         },
       ]
     : []),

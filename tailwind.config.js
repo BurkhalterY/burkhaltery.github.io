@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         mono: ["monospace"],
       },
+      spacing: {
+        26: " 6.5rem",
+      },
     },
   },
   plugins: [],
