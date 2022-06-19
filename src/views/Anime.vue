@@ -27,6 +27,11 @@ const anime = [
     image: "anime/steins-gate.jpg",
   },
   {
+    name: "The Promised Neverland",
+    year: 2019,
+    image: "anime/tpn.jpg",
+  },
+  {
     name: "Mob Psycho 100",
     year: 2016,
     image: "anime/mob-psycho-100.jpg",
@@ -37,9 +42,9 @@ const anime = [
     image: "anime/code-geass.jpg",
   },
   {
-    name: "Rick et Morty",
-    year: 2013,
-    image: "anime/rick-and-morty.jpg",
+    name: "Sword Art Online",
+    year: 2012,
+    image: "anime/sao.jpg",
   },
 ]
 </script>
