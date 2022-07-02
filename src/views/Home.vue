@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white rounded px-5 py-5">
+  <div class="bg-white rounded p-5">
     <div class="grid grid-cols-5 gap-5">
       <div class="sm:col-span-2">
         <img class="w-64 rounded" src="/images/pp/aestetica.png" />

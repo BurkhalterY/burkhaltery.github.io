@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div>
     <h2 class="text-2xl text-center my-4 px-2 py-1 bg-white rounded">
       Mes anime préférés
     </h2>

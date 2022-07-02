@@ -28,6 +28,10 @@ const menu = [
     name: "Parcours",
     route: "Career",
   },
+  {
+    name: "Projets",
+    route: "Projects",
+  },
   ...(showFullMode
     ? [
         {
