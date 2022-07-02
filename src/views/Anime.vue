@@ -12,11 +12,6 @@ import Ranking from "@/components/Ranking.vue"
 
 const anime = [
   {
-    name: "Miraculous : les aventures de Ladybug et Chat Noir",
-    year: 2015,
-    image: "anime/mlb.jpg",
-  },
-  {
     name: "Lastman",
     year: 2016,
     image: "anime/lastman.jpg",
@@ -32,14 +27,14 @@ const anime = [
     image: "anime/tpn.jpg",
   },
   {
+    name: "Code Geass",
+    year: 2006,
+    image: "anime/code-geass.jpg",
+  },
+  {
     name: "Mob Psycho 100",
     year: 2016,
     image: "anime/mob-psycho-100.jpg",
-  },
-  {
-    name: "Code Geass: Lelouch of the Rebellion",
-    year: 2006,
-    image: "anime/code-geass.jpg",
   },
   {
     name: "Sword Art Online",

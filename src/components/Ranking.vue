@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex md:grid md:grid-cols-3 gap-x-4 gap-y-12 pt-6 flex-col md:flex-row"
-  >
+  <div class="flex md:grid md:grid-cols-3 gap-4 pt-6 flex-col md:flex-row">
     <div
       v-for="(item, i) of items"
       class="mx-auto"
