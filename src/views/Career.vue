@@ -51,6 +51,7 @@
         </template>
       </template>
     </table>
+    <span class="text-xs">Envoie de documents sur demande</span>
   </div>
 </template>
 
@@ -130,6 +131,19 @@ const experiences = [
   {
     name: "Formation",
     companies: [
+      {
+        name: "ETML",
+        location: "Lausanne",
+        places: [
+          {
+            job: "Maturité Professionnelle technique, architecture et sciences de la vie",
+            start: 2022,
+            end: 2024,
+            description: "",
+            skills: [],
+          },
+        ],
+      },
       {
         name: "EPSIC",
         location: "Lausanne",

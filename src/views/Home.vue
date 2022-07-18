@@ -17,7 +17,7 @@
           </tr>
           <tr>
             <td>Profession</td>
-            <td>Informaticien</td>
+            <td>Informaticien, développeur</td>
           </tr>
           <tr>
             <td>Ville</td>
@@ -44,9 +44,6 @@
           <tr>
             <td>Navigateur préféré</td>
             <td>Firefox</td>
-          </tr>
-          <tr>
-            <td>...</td>
           </tr>
         </table>
       </div>
