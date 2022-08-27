@@ -50,7 +50,7 @@ const projects = [
     image: "projects/prog-normalux.png",
     link: "https://epsic.burkhalter.dev",
     skills: [vueJs],
-    dateRange: "janv. 2019 - En cours",
+    dateRange: "janv. 2019 - juil. 2022",
     description:
       "Un site qui reprend et réexplique les modules d'informatique que j'ai vu en première année dans le but d'aider mes camarades. Depuis, chaque classe de première année l'utilise.",
   },

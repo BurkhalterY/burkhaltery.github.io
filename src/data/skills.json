@@ -1,18 +1,22 @@
 {
   "access": {
     "name": "Microsoft Access",
+    "shortName": "Access",
     "icon": "ms-access.svg"
   },
   "acrobat": {
     "name": "Adobe Acrobat",
+    "shortName": "Acrobat",
     "icon": "adobe-acrobat.svg"
   },
   "afterEffect": {
     "name": "Adobe After Effect",
+    "shortName": "After Effect",
     "icon": "adobe-after-effect.svg"
   },
   "animate": {
     "name": "Adobe Animate",
+    "shortName": "Animate",
     "icon": "adobe-animate.svg"
   },
   "arduino": {
@@ -53,14 +57,17 @@
   },
   "css": {
     "name": "CSS 3",
+    "shortName": "CSS",
     "icon": "css.svg"
   },
   "excel": {
     "name": "Microsoft Excel",
+    "shortName": "Excel",
     "icon": "ms-excel.svg"
   },
   "flash": {
     "name": "Adobe Flash",
+    "shortName": "Flash",
     "icon": "adobe-flash.svg"
   },
   "git": {
@@ -77,10 +84,12 @@
   },
   "html": {
     "name": "HTML 5",
+    "shortName": "HTML",
     "icon": "html.svg"
   },
   "illustrator": {
     "name": "Adobe Illustrator",
+    "shortName": "Illustrator",
     "icon": "adobe-illustrator.svg"
   },
   "java": {
@@ -133,6 +142,7 @@
   },
   "photoShop": {
     "name": "Adobe Photoshop",
+    "shortName": "Photoshop",
     "icon": "adobe-photoshop.svg"
   },
   "php": {
@@ -143,16 +153,19 @@
     "name": "PostgreSQL",
     "icon": "psql.svg"
   },
-  "poweroint": {
+  "powerPoint": {
     "name": "Microsoft PowerPoint",
+    "shortName": "PowerPoint",
     "icon": "ms-powerpoint.svg"
   },
   "premierePro": {
     "name": "Adobe Premiere Pro",
+    "shortName": "Premiere Pro",
     "icon": "adobe-premiere-pro.svg"
   },
   "publisher": {
     "name": "Microsoft Publisher",
+    "shortName": "Publisher",
     "icon": "ms-publisher.svg"
   },
   "python": {
@@ -161,6 +174,7 @@
   },
   "tailwind": {
     "name": "Tailwind CSS",
+    "shortName": "Tailwind",
     "icon": "tailwind.svg"
   },
   "ubuntu": {
@@ -169,10 +183,12 @@
   },
   "unity3d": {
     "name": "Unity 3D",
+    "shortName": "Unity",
     "icon": "unity3d.svg"
   },
   "vba": {
     "name": "Visual Basic for Applications",
+    "shortName": "VBA",
     "icon": "vba.svg"
   },
   "vueJs": {
@@ -185,6 +201,7 @@
   },
   "word": {
     "name": "Microsoft Word",
+    "shortName": "Word",
     "icon": "ms-word.svg"
   }
 }
