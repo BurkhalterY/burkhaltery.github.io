@@ -91,7 +91,7 @@ const experiences = [
             job: "Développeur Odoo",
             start: 2022,
             end: false,
-            description: "Customisation d'Odoo et développement Vue.js.",
+            description: "Customisation Odoo et développement Vue.js.",
             skills: [],
           },
           {
@@ -139,7 +139,7 @@ const experiences = [
             job: "Maturité Professionnelle technique, architecture et sciences de la vie",
             start: 2022,
             end: 2024,
-            description: "",
+            description: "Dans le but d'accéder à une HES ou à l'EPFL, à définir.",
             skills: [],
           },
         ],
