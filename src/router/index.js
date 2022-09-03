@@ -22,15 +22,23 @@ const routes = [
     component: () => import("@/views/Projects.vue"),
   },
   {
-    path: "/music",
-    name: "Music",
-    component: () => import("@/views/Music.vue"),
+    path: "/hobbies",
+    name: "Hobbies",
+    component: () => import("@/views/Hobbies.vue"),
+    children: [
+      {
+        path: "music",
+        name: "Music",
+        component: () => import("@/views/Music.vue"),
+      },
+      {
+        path: "anime",
+        name: "Anime",
+        component: () => import("@/views/Anime.vue"),
+      },
+    ],
   },
-  {
-    path: "/anime",
-    name: "Anime",
-    component: () => import("@/views/Anime.vue"),
-  },
+
   {
     path: "/socials",
     name: "Socials",
