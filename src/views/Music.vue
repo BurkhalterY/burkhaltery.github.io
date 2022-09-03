@@ -23,5 +23,17 @@ const artists = [
     name: "Louise Attaque",
     image: "music/louise-attaque.jpg",
   },
+  {
+    name: "Benab",
+    image: "music/benab.jpg",
+  },
+  {
+    name: "Stromae",
+    image: "music/stromae.jpg",
+  },
+  {
+    name: "Johnny Hallyday",
+    image: "music/johnny-hallyday.jpg",
+  },
 ]
 </script>

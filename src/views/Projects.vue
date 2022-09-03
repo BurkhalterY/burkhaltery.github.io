@@ -70,7 +70,7 @@ const projects = [
     skills: [androidStudio, java, javascript],
     dateRange: "août 2019",
     description:
-      "Petite application Android qui exploite une faille du jeu Use Your Words et permet la tricherie.",
+      "Petite application Android qui exploite une faille du jeu Use Your Words. Cela permet de connaître la house answer et de voter pour soi-même.",
   },
   {
     name: "Normalux.ch",
