@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white rounded px-8 pb-4">
-    <h2 class="text-2xl text-center my-4">Me retrouver</h2>
+    <h2 class="text-2xl text-center my-4">{{ t("contact_me") }}</h2>
     <div class="grid grid-cols-3 gap-8">
       <a v-for="social of socials" target="_blank" :href="social.link">
         <img
@@ -15,6 +15,19 @@
 </template>
 
 <script setup>
+import { useI18n } from "vue-i18n"
+
+const { t } = useI18n({
+  messages: {
+    fr: {
+      contact_me: "Me retrouver",
+    },
+    en: {
+      contact_me: "Contact me",
+    },
+  },
+})
+
 const socials = [
   {
     name: "GitHub",

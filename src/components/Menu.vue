@@ -2,7 +2,15 @@
   <nav class="w-full text-white">
     <ul class="m-1">
       <li class="sm:inline-block m-1 text-center sm:float-right">
-        <span class="p-1">Yannis Burkhalter &copy;</span>
+        <div class="p-1">Yannis Burkhalter &copy;</div>
+      </li>
+      <li class="sm:inline-block m-1 text-center sm:float-right">
+        <button
+          class="uppercase p-1"
+          @click="locale = locale == 'fr' ? 'en' : 'fr'"
+        >
+          {{ locale }}
+        </button>
       </li>
       <li v-for="item of menu" class="sm:inline-block m-1 sm:mx-1 text-center">
         <router-link
@@ -10,7 +18,7 @@
           class="block p-1 rounded hover:bg-white hover:text-black"
           active-class="bg-white text-black"
         >
-          {{ item.name }}
+          {{ t(item.name) }}
         </router-link>
       </li>
     </ul>
@@ -18,30 +26,53 @@
 </template>
 
 <script setup>
+import { useI18n } from "vue-i18n"
+
 const showFullMode = import.meta.env.VITE_SHOW_FULL_MODE === "true"
+
+const { t, locale } = useI18n({
+  useScope: "global",
+  messages: {
+    fr: {
+      introduction: "Présentation",
+      career: "Parcours",
+      projects: "Projets",
+      hobbies: "Hobbies",
+      social_networks: "Réseaux sociaux",
+    },
+    en: {
+      introduction: "Introduction",
+      career: "Career",
+      projects: "Projects",
+      hobbies: "Hobbies",
+      social_networks: "Socials networks",
+    },
+  },
+})
+
 const menu = [
   {
-    name: "Présentation",
+    name: "introduction",
     route: "Home",
   },
   {
-    name: "Parcours",
+    name: "career",
     route: "Career",
   },
   {
-    name: "Projets",
+    name: "projects",
     route: "Projects",
   },
   ...(showFullMode
     ? [
         {
-          name: "Hobbies",
+          name: "hobbies",
           route: "Hobbies",
         },
       ]
     : []),
   {
-    name: "Réseaux sociaux",
+    name: "social_networks",
     route: "Socials",
   },
 ]

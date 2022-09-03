@@ -5,45 +5,45 @@
         <img class="w-64 rounded" src="/images/pp/aestetica.png" />
       </div>
       <div class="col-span-4 sm:col-span-3 font-mono">
-        <h1 class="text-3xl">Yannis</h1>
+        <h1 class="text-3xl">Yannis Burkhalter</h1>
         <table class="w-full">
           <tr>
-            <td>Âge</td>
-            <td>20 ans</td>
+            <td>{{ t("age") }}</td>
+            <td>{{ t("age_value") }}</td>
           </tr>
           <tr>
-            <td>Travail</td>
-            <td>Open Net Sàrl</td>
+            <td>{{ t("job") }}</td>
+            <td>{{ t("job_value") }}</td>
           </tr>
           <tr>
-            <td>Profession</td>
-            <td>Informaticien, développeur</td>
+            <td>{{ t("occupation") }}</td>
+            <td>{{ t("occupation_value") }}</td>
           </tr>
           <tr>
-            <td>Ville</td>
-            <td>Vevey, Suisse</td>
+            <td>{{ t("location") }}</td>
+            <td>{{ t("location_value") }}</td>
           </tr>
           <tr>
-            <td>E-mail</td>
+            <td>{{ t("email") }}</td>
             <td>
               <a href="mailto:yannis@burkhalter.dev">yannis@burkhalter.dev</a>
             </td>
           </tr>
           <tr>
-            <td>Discord</td>
+            <td>{{ t("discord") }}</td>
             <td>aestetica#9521</td>
           </tr>
           <tr>
-            <td>Langues</td>
+            <td>{{ t("language") }}</td>
             <td>🇫🇷 🇬🇧</td>
           </tr>
           <tr v-if="showFullMode">
-            <td>Statut</td>
-            <td>Célibataire</td>
+            <td>{{ t("status") }}</td>
+            <td>{{ t("status_value") }}</td>
           </tr>
           <tr>
-            <td>Navigateur préféré</td>
-            <td>Firefox</td>
+            <td>{{ t("favorite_browser") }}</td>
+            <td>{{ t("favorite_browser_value") }}</td>
           </tr>
         </table>
       </div>
@@ -52,5 +52,46 @@
 </template>
 
 <script setup>
+import { useI18n } from "vue-i18n"
+
 const showFullMode = import.meta.env.VITE_SHOW_FULL_MODE === "true"
+
+const { t } = useI18n({
+  messages: {
+    fr: {
+      age: "Âge",
+      age_value: "20 ans",
+      job: "Travail",
+      job_value: "Open Net Sàrl",
+      occupation: "Profession",
+      occupation_value: "Informaticien, développeur",
+      location: "Ville",
+      location_value: "Vevey, Suisse",
+      email: "E-mail",
+      discord: "Discord",
+      language: "Langue",
+      status: "Statut",
+      status_value: "Célibataire",
+      favorite_browser: "Navigateur préféré",
+      favorite_browser_value: "Firefox",
+    },
+    en: {
+      age: "Age",
+      age_value: "20 years old",
+      job: "Job",
+      job_value: "Open Net Sàrl",
+      occupation: "Occupation",
+      occupation_value: "Developer",
+      location: "Location",
+      location_value: "Vevey, Switzerland",
+      email: "E-mail",
+      discord: "Discord",
+      language: "Language",
+      status: "Status",
+      status_value: "Single",
+      favorite_browser: "Favorite browser",
+      favorite_browser_value: "Firefox",
+    },
+  },
+})
 </script>
