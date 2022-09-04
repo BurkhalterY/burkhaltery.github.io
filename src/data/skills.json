@@ -158,6 +158,11 @@
     "shortName": "PowerPoint",
     "icon": "ms-powerpoint.svg"
   },
+  "powerShell": {
+    "name": "PowerShell",
+    "shortName": "PowerShell",
+    "icon": "powershell.svg"
+  },
   "premierePro": {
     "name": "Adobe Premiere Pro",
     "shortName": "Premiere Pro",

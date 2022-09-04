@@ -5,7 +5,7 @@
         <tr>
           <td colspan="5">
             <h2 class="text-2xl text-center" :class="{ 'mt-5': index }">
-              {{ group.name }}
+              {{ group.name[locale] }}
             </h2>
           </td>
         </tr>
@@ -26,15 +26,15 @@
               <td v-if="place.start != place.end">-</td>
               <td v-if="place.start != place.end">
                 <span v-if="place.end">{{ place.end }}</span>
-                <span v-else class="text-xs mr-2">Aujourd'hui</span>
+                <span v-else class="text-xs mr-2">{{ t("today") }}</span>
               </td>
-              <td>{{ place.job }}</td>
+              <td>{{ place.job[locale] }}</td>
             </tr>
             <tr>
               <td colspan="3" />
               <td>
                 <div class="text-sm italic">
-                  {{ place.description }}
+                  {{ place.description[locale] }}
                 </div>
                 <div class="mt-1 mb-3">
                   <img
@@ -51,11 +51,12 @@
         </template>
       </template>
     </table>
-    <span class="text-xs">Envoie de documents sur demande</span>
+    <span class="text-xs">{{ t("sending_documents_on_request") }}</span>
   </div>
 </template>
 
 <script setup>
+import { useI18n } from "vue-i18n"
 import {
   android,
   androidStudio,
@@ -73,11 +74,25 @@ import {
   mySql,
   odoo,
   php,
+  powerShell,
   python,
   tailwind,
   ubuntu,
   vueJs,
 } from "@/data/skills.json"
+
+const { t, locale } = useI18n({
+  messages: {
+    fr: {
+      today: "Aujourd'hui",
+      sending_documents_on_request: "Envoie de documents sur demande",
+    },
+    en: {
+      today: "Today",
+      sending_documents_on_request: "Sending documents on request",
+    },
+  },
+})
 
 const experiences = [
   {
@@ -88,18 +103,29 @@ const experiences = [
         location: "Lausanne",
         places: [
           {
-            job: "Développeur Odoo",
+            job: {
+              fr: "Développeur Odoo",
+              en: "Odoo developer",
+            },
             start: 2022,
             end: false,
-            description: "Customisation Odoo et développement Vue.js.",
+            description: {
+              fr: "Customisation Odoo et développement Vue.js.",
+              en: "Odoo customization & Vue.js.",
+            },
             skills: [],
           },
           {
-            job: "Apprenti informaticien",
+            job: {
+              fr: "Apprenti informaticien",
+              en: "IT apprentice",
+            },
             start: 2021,
             end: 2022,
-            description:
-              "Dernière année d'apprentissage chez Open Net, intégrateur Odoo.",
+            description: {
+              fr: "Dernière année d'apprentissage chez Open Net, intégrateur Odoo.",
+              en: "I have finished my apprenticeship at Open Net, Odoo integrator.",
+            },
             skills: [odoo, python, vueJs, tailwind, ubuntu],
           },
         ],
@@ -109,19 +135,29 @@ const experiences = [
         location: "Pomy, Aigle",
         places: [
           {
-            job: "Apprenti informaticien",
+            job: {
+              fr: "Apprenti informaticien",
+              en: "IT apprentice",
+            },
             start: 2018,
             end: 2021,
-            description:
-              "Apprentissage en informatique, orienté développement d'applications. J'ai, entre autres, participé au développement d'un gestionnaire de stock en PHP avec le framework CodeIgniter.",
+            description: {
+              fr: "Apprentissage en informatique, orienté développement d'applications. J'ai, entre autres, participé au développement d'un gestionnaire de stock en PHP avec le framework CodeIgniter.",
+              en: "I have did the 3 first years of my apprenticeship at Orif, with somes stages on many others companies.",
+            },
             skills: [bootstrap, php, mySql, codeIgniter],
           },
           {
-            job: "Préformation",
+            job: {
+              fr: "Préformation",
+              en: "Pre-training",
+            },
             start: 2017,
             end: 2018,
-            description:
-              "Préformation d'un an au sein de la section informatique de Pomy.",
+            description: {
+              fr: "Préformation d'un an au sein de la section informatique de Pomy.",
+              en: "Before starting my apprenticeship, I have did a pre-training at Orif where I have learned the IT and development basics.",
+            },
             skills: [html, css, javascript, justBasic],
           },
         ],
@@ -136,10 +172,16 @@ const experiences = [
         location: "Lausanne",
         places: [
           {
-            job: "Maturité Professionnelle technique, architecture et sciences de la vie",
+            job: {
+              fr: "Maturité Professionnelle, technique, architecture et sciences de la vie",
+              en: "Vocational Baccalaureate, Engineering, Architecture, Life Sciences",
+            },
             start: 2022,
             end: 2024,
-            description: "Dans le but d'accéder à une HES ou à l'EPFL, à définir.",
+            description: {
+              fr: "Dans le but d'accéder à une HES ou à l'EPFL, à définir.",
+              en: "For accessing EPFL or another High School.",
+            },
             skills: [],
           },
         ],
@@ -149,10 +191,16 @@ const experiences = [
         location: "Lausanne",
         places: [
           {
-            job: "Apprenti informaticien CFC, orientation développement d'applications",
+            job: {
+              fr: "CFC informaticien, développement d'applications",
+              en: "Federal VET Diploma, Application Development",
+            },
             start: 2018,
             end: 2022,
-            description: "Formation de 4 ans, terminée avec mention bien.",
+            description: {
+              fr: "Formation de 4 ans, terminée avec mention bien.",
+              en: "4 year apprenticeship, finish with a « good » mention.",
+            },
             skills: [java, cSharp, angular],
           },
         ],
@@ -167,11 +215,16 @@ const experiences = [
         location: "Vevey",
         places: [
           {
-            job: "Stage de développeur PHP",
+            job: {
+              fr: "Stage de développeur PHP",
+              en: "PHP developer stage",
+            },
             start: 2020,
             end: 2021,
-            description:
-              "Stage de 9 mois chez Quicksite, agence web, chez qui j'ai développé une interface de traduction pour Laravel.",
+            description: {
+              fr: "Stage de 9 mois chez Quicksite, agence web, chez qui j'ai développé une interface de traduction pour Laravel.",
+              en: "9 months stage at Quicksite, where I have developed an translation interface with Laravel.",
+            },
             skills: [php, laravel],
           },
         ],
@@ -181,12 +234,17 @@ const experiences = [
         location: "Préverenges",
         places: [
           {
-            job: "Stage de développeur C#",
+            job: {
+              fr: "Stage de développeur C#",
+              en: "C# developer stage",
+            },
             start: 2020,
             end: 2020,
-            description:
-              "Stage de 2 mois au SIT de l'Orif où j'étais chargé de développer un logiciel interne.",
-            skills: [cSharp],
+            description: {
+              fr: "Stage de 2 mois au SIT de l'Orif où j'étais chargé de développer un logiciel interne.",
+              en: "2 months stage at Orif SIT, where I have developed an internal software in C# and PowerShell.",
+            },
+            skills: [cSharp, powerShell],
           },
         ],
       },
@@ -195,11 +253,16 @@ const experiences = [
         location: "Préverenges",
         places: [
           {
-            job: "Stage de développeur Android",
+            job: {
+              fr: "Stage de développeur Android",
+              en: "Android developer stage",
+            },
             start: 2019,
             end: 2019,
-            description:
-              "Stage de 5 mois durant lequel j'ai participé au développement d'applications Android avec Java et Kotlin.",
+            description: {
+              fr: "Stage de 5 mois durant lequel j'ai participé au développement d'applications Android avec Java et Kotlin.",
+              en: "5 months stage at Creatis, where I have ported iOS applications to Android.",
+            },
             skills: [android, java, kotlin, androidStudio],
           },
         ],
