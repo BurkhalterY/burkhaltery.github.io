@@ -1,13 +1,14 @@
 <template>
   <div>
     <h2 class="text-2xl text-center my-4 px-2 py-1 bg-white rounded">
-      Mes animes préférés
+      {{ t("my_favorite_animes") }}
     </h2>
     <Ranking :items="anime" />
   </div>
 </template>
 
 <script setup>
+import { useI18n } from "vue-i18n"
 import Ranking from "@/components/Ranking.vue"
 
 const anime = [
@@ -42,4 +43,15 @@ const anime = [
     image: "anime/sao.jpg",
   },
 ]
+
+const { t } = useI18n({
+  messages: {
+    fr: {
+      my_favorite_animes: "Mes animes préférés",
+    },
+    en: {
+      my_favorite_animes: "My favorite animes",
+    },
+  },
+})
 </script>

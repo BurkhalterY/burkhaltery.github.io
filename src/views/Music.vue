@@ -1,13 +1,14 @@
 <template>
   <div>
     <h2 class="text-2xl text-center my-4 px-2 py-1 bg-white rounded">
-      La musique que j'écoute
+      {{ t("music_i_listen_to") }}
     </h2>
     <Ranking :items="artists" :square="true" />
   </div>
 </template>
 
 <script setup>
+import { useI18n } from "vue-i18n"
 import Ranking from "@/components/Ranking.vue"
 
 const artists = [
@@ -36,4 +37,15 @@ const artists = [
     image: "music/johnny-hallyday.jpg",
   },
 ]
+
+const { t } = useI18n({
+  messages: {
+    fr: {
+      music_i_listen_to: "La musique que j'écoute",
+    },
+    en: {
+      music_i_listen_to: "Music I listen to",
+    },
+  },
+})
 </script>

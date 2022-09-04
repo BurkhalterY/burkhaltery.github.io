@@ -1,30 +1,35 @@
 import { createRouter, createWebHistory } from "vue-router"
+import { useI18n } from "vue-i18n"
+import { SUPPORT_LOCALES, getLocale, setI18nLanguage } from "@/i18n"
+
+const locale = getLocale()
 
 const routes = [
   {
-    path: "/",
+    path: "/:locale",
     name: "Home",
     component: () => import("@/views/Home.vue"),
   },
   {
-    path: "/career",
+    path: "/:locale/career",
     name: "Career",
     component: () => import("@/views/Career.vue"),
   },
   {
-    path: "/skills",
+    path: "/:locale/skills",
     name: "Skills",
     component: () => import("@/views/Skills.vue"),
   },
   {
-    path: "/projects",
+    path: "/:locale/projects",
     name: "Projects",
     component: () => import("@/views/Projects.vue"),
   },
   {
-    path: "/hobbies",
+    path: "/:locale/hobbies",
     name: "Hobbies",
     component: () => import("@/views/Hobbies.vue"),
+
     children: [
       {
         path: "music",
@@ -40,15 +45,31 @@ const routes = [
   },
 
   {
-    path: "/socials",
+    path: "/:locale/socials",
     name: "Socials",
     component: () => import("@/views/Socials.vue"),
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    redirect: () => `/${locale}`,
   },
 ]
 
 const router = createRouter({
   history: createWebHistory("/"),
   routes,
+})
+
+router.beforeEach(async (to, from, next) => {
+  const paramsLocale = to.params.locale
+
+  if (!SUPPORT_LOCALES.includes(paramsLocale)) {
+    return next(`/${locale.value}`)
+  }
+
+  setI18nLanguage(paramsLocale)
+
+  return next()
 })
 
 export default router

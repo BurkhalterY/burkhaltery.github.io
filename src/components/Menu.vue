@@ -5,16 +5,19 @@
         <div class="p-1">Yannis Burkhalter &copy;</div>
       </li>
       <li class="sm:inline-block m-1 text-center sm:float-right">
-        <button
-          class="uppercase p-1"
-          @click="locale = locale == 'fr' ? 'en' : 'fr'"
+        <router-link
+          class="block p-1 uppercase"
+          :to="{
+            name: route.name,
+            params: { locale: locale == 'fr' ? 'en' : 'fr' },
+          }"
         >
           {{ locale }}
-        </button>
+        </router-link>
       </li>
       <li v-for="item of menu" class="sm:inline-block m-1 sm:mx-1 text-center">
         <router-link
-          :to="{ name: item.route }"
+          :to="{ name: item.route, params: { locale } }"
           class="block p-1 rounded hover:bg-white hover:text-black"
           active-class="bg-white text-black"
         >
@@ -26,12 +29,14 @@
 </template>
 
 <script setup>
+import { useRoute } from "vue-router"
 import { useI18n } from "vue-i18n"
 
 const showFullMode = import.meta.env.VITE_SHOW_FULL_MODE === "true"
 
+const route = useRoute()
+
 const { t, locale } = useI18n({
-  useScope: "global",
   messages: {
     fr: {
       introduction: "Présentation",
