@@ -40,6 +40,10 @@ const artists = [
     name: "Hatsune Miku",
     image: "music/hatsune-miku.jpg",
   },
+  {
+    name: "Alex le R",
+    image: "music/alex-le-r.jpg",
+  },
 ]
 
 const { t } = useI18n({
