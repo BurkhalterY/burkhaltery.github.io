@@ -124,7 +124,7 @@ const experiences = [
             end: 2022,
             description: {
               fr: "Dernière année d'apprentissage chez Open Net, intégrateur Odoo.",
-              en: "I have finished my apprenticeship at Open Net, Odoo integrator.",
+              en: "I have did my last year of apprenticeship at Open Net, Odoo integrator.",
             },
             skills: [odoo, python, vueJs, tailwind, ubuntu],
           },
@@ -198,8 +198,8 @@ const experiences = [
             start: 2018,
             end: 2022,
             description: {
-              fr: "Formation de 4 ans, terminée avec mention bien.",
-              en: "4 year apprenticeship, finish with a « good » mention.",
+              fr: "Apprentissage de 4 ans, terminée avec mention bien.",
+              en: "4 year apprenticeship, finish with a «\xa0good\xa0» mention.",
             },
             skills: [java, cSharp, angular],
           },
