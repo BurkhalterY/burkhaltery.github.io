@@ -36,6 +36,10 @@ const artists = [
     name: "Johnny Hallyday",
     image: "music/johnny-hallyday.jpg",
   },
+  {
+    name: "Hatsune Miku",
+    image: "music/hatsune-miku.jpg",
+  },
 ]
 
 const { t } = useI18n({
