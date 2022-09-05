@@ -7,9 +7,14 @@
       class="my-5 p-5 bg-white rounded grid grid-cols-5 gap-5"
       v-for="(project, i) in projects"
     >
-      <div class="col-span-3" :class="{ 'order-1': i % 2 == 0 }">
-        <h3 class="text-2xl">{{ project.name[locale] }}</h3>
-        <div class="mt-1">
+      <div
+        class="col-span-12 sm:col-span-3"
+        :class="{ 'sm:order-1': i % 2 == 0 }"
+      >
+        <h3 class="text-2xl text-center sm:text-start">
+          {{ project.name[locale] }}
+        </h3>
+        <div class="mt-1 text-center sm:text-start">
           <img
             v-for="skill of project.skills"
             :src="`/images/skills/${skill.icon}`"
@@ -20,12 +25,12 @@
         </div>
         <p class="max-w-sm text-justify">{{ project.description[locale] }}</p>
       </div>
-      <div class="col-span-2">
+      <div class="col-span-12 sm:col-span-2">
         <a target="_blank" :href="project.link">
           <img
             :src="`/images/${project.image}`"
             :alt="project.name"
-            class="w-64 h-48 object-contain"
+            class="w-64 h-48 object-contain mx-auto"
         /></a>
       </div>
     </div>
