@@ -192,7 +192,7 @@ const experiences = [
         places: [
           {
             job: {
-              fr: "CFC informaticien, développement d'applications",
+              fr: "CFC informaticien, orienté développement d'applications",
               en: "Federal VET Diploma, Application Development",
             },
             start: 2018,
