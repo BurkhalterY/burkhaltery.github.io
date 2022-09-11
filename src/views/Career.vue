@@ -4,7 +4,10 @@
       <template v-for="(group, index) of experiences">
         <tr>
           <td colspan="5">
-            <h2 class="text-2xl text-center" :class="{ 'mt-5': index }">
+            <h2
+              class="text-2xl text-center uppercase"
+              :class="{ 'mt-5': index }"
+            >
               {{ group.name[locale] }}
             </h2>
           </td>
@@ -96,7 +99,10 @@ const { t, locale } = useI18n({
 
 const experiences = [
   {
-    name: "Expériences professionnelles",
+    name: {
+      fr: "Expériences professionnelles",
+      en: "Work Experience",
+    },
     companies: [
       {
         name: "Open Net Sàrl",
@@ -165,7 +171,10 @@ const experiences = [
     ],
   },
   {
-    name: "Formation",
+    name: {
+      fr: "Formation",
+      en: "Education",
+    },
     companies: [
       {
         name: "ETML",
@@ -208,7 +217,10 @@ const experiences = [
     ],
   },
   {
-    name: "Stages",
+    name: {
+      fr: "Stages",
+      en: "Stages",
+    },
     companies: [
       {
         name: "Quicksite SA",
