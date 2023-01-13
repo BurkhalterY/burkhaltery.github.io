@@ -40,9 +40,18 @@ const routes = [
         name: "Anime",
         component: () => import("@/views/Anime.vue"),
       },
+      {
+        path: "gaming",
+        name: "Gaming",
+        component: () => import("@/views/Gaming.vue"),
+      },
     ],
   },
-
+  {
+    path: "/:locale/faq",
+    name: "FAQ",
+    component: () => import("@/views/Faq.vue"),
+  },
   {
     path: "/:locale/socials",
     name: "Socials",

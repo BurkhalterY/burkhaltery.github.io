@@ -29,10 +29,8 @@
 </template>
 
 <script setup>
-import { useRoute } from "vue-router"
 import { useI18n } from "vue-i18n"
-
-const showFullMode = import.meta.env.VITE_SHOW_FULL_MODE === "true"
+import { useRoute } from "vue-router"
 
 const route = useRoute()
 
@@ -43,6 +41,7 @@ const { t, locale } = useI18n({
       career: "Parcours",
       projects: "Projets",
       hobbies: "Hobbies",
+      faq: "FAQ",
       social_networks: "Réseaux sociaux",
     },
     en: {
@@ -50,6 +49,7 @@ const { t, locale } = useI18n({
       career: "Career",
       projects: "Projects",
       hobbies: "Hobbies",
+      faq: "FAQ",
       social_networks: "Socials networks",
     },
   },
@@ -68,14 +68,14 @@ const menu = [
     name: "projects",
     route: "Projects",
   },
-  ...(showFullMode
-    ? [
-        {
-          name: "hobbies",
-          route: "Hobbies",
-        },
-      ]
-    : []),
+  {
+    name: "hobbies",
+    route: "Hobbies",
+  },
+  {
+    name: "faq",
+    route: "FAQ",
+  },
   {
     name: "social_networks",
     route: "Socials",

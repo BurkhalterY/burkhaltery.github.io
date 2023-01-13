@@ -18,7 +18,6 @@
         :src="`/images/${item.image}`"
         :alt="item.name"
         class="object-cover w-64 rounded-t"
-        :class="square ? 'h-64' : 'h-96'"
       />
       <div class="w-64 bg-white rounded-b" :class="i < 3 ? meta[i].height : ''">
         <h3 class="p-1 text-lg text-center">

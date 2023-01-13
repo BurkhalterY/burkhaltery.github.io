@@ -3,7 +3,7 @@
     <h2 class="px-2 py-1 my-4 text-2xl text-center bg-white rounded">
       {{ t("music_i_listen_to") }}
     </h2>
-    <Ranking :items="artists" :square="true" />
+    <Ranking :items="artists" />
   </div>
 </template>
 

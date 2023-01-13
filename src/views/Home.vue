@@ -37,7 +37,7 @@
             <td>{{ t("language") }}</td>
             <td>🇫🇷 🇬🇧</td>
           </tr>
-          <tr v-if="showFullMode">
+          <tr>
             <td>{{ t("status") }}</td>
             <td>{{ t("status_value") }}</td>
           </tr>
@@ -53,8 +53,6 @@
 
 <script setup>
 import { useI18n } from "vue-i18n"
-
-const showFullMode = import.meta.env.VITE_SHOW_FULL_MODE === "true"
 
 const { t } = useI18n({
   messages: {

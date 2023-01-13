@@ -15,6 +15,13 @@
         <div class="text-5xl">🎌</div>
         <div class="my-2">{{ t("anime") }}</div>
       </router-link>
+      <router-link
+        :to="{ name: 'Gaming' }"
+        class="px-10 pt-5 text-center bg-white rounded"
+      >
+        <div class="text-5xl">🕹</div>
+        <div class="my-2">{{ t("gaming") }}</div>
+      </router-link>
     </div>
     <router-view v-slot="{ Component }">
       <transition mode="out-in">
@@ -32,10 +39,12 @@ const { t } = useI18n({
     fr: {
       music: "Musique",
       anime: "Animes",
+      gaming: "Jeux vidéo",
     },
     en: {
       music: "Music",
       anime: "Animes",
+      gaming: "Gaming",
     },
   },
 })
