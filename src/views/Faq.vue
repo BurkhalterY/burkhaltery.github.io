@@ -52,7 +52,7 @@ const questions = [
     },
     answer: {
       fr: "Je ne me considère pas comme un wesh-wesh, mais il est vrai que j'apprécie certains aspects de leur culture.",
-      en: "I'm not wesh-wesh, but I like some points of there culture.",
+      en: "I'm not wesh-wesh, but I like some points of their culture.",
     },
     show: false,
   },
