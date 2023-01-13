@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex justify-center gap-5">
+    <div class="flex flex-col justify-center gap-5 sm:flex-row">
       <router-link
         :to="{ name: 'Music' }"
         class="px-10 pt-5 text-center bg-white rounded"
