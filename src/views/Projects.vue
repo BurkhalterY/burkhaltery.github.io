@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h2 class="text-2xl text-center my-4 px-2 py-1 bg-white rounded">
+    <h2 class="px-2 py-1 my-4 text-2xl text-center bg-white rounded">
       {{ t("some_projects") }}
     </h2>
     <div
-      class="my-5 p-5 bg-white rounded grid grid-cols-5 gap-5"
+      class="grid grid-cols-5 gap-5 p-5 my-5 bg-white rounded"
       v-for="(project, i) in projects"
     >
       <div
@@ -20,7 +20,7 @@
             :src="`/images/skills/${skill.icon}`"
             :alt="skill.name"
             :title="skill.name"
-            class="object-contain align-text-bottom inline w-6 h-6 mx-px"
+            class="inline object-contain w-6 h-6 mx-px align-text-bottom"
           />
         </div>
         <p class="max-w-sm text-justify">{{ project.description[locale] }}</p>
@@ -30,7 +30,7 @@
           <img
             :src="`/images/${project.image}`"
             :alt="project.name"
-            class="w-64 h-48 object-contain mx-auto"
+            class="object-contain w-64 h-48 mx-auto"
         /></a>
       </div>
     </div>

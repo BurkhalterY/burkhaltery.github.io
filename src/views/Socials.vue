@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-white rounded px-8 pb-4">
-    <h2 class="text-2xl text-center my-4">{{ t("contact_me") }}</h2>
+  <div class="px-8 pb-4 bg-white rounded">
+    <h2 class="my-4 text-2xl text-center">{{ t("contact_me") }}</h2>
     <div class="grid grid-cols-3 gap-8">
       <a v-for="social of socials" target="_blank" :href="social.link">
         <img

@@ -1,10 +1,10 @@
 <template>
-  <div class="bg-white rounded p-5">
+  <div class="p-5 bg-white rounded">
     <div class="grid grid-cols-5 gap-5">
       <div class="sm:col-span-2">
         <img class="w-64 rounded" src="/images/pp/aestetica.png" />
       </div>
-      <div class="col-span-4 sm:col-span-3 font-mono">
+      <div class="col-span-4 font-mono sm:col-span-3">
         <h1 class="text-3xl">Yannis Burkhalter</h1>
         <table class="w-full">
           <tr>

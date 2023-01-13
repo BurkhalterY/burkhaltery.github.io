@@ -1,14 +1,14 @@
 <template>
   <canvas
     ref="canvas"
-    class="fixed top-0 w-full min-h-screen h-full bg-black -z-50"
+    class="fixed top-0 w-full h-full min-h-screen bg-black -z-50"
     width="1920"
     height="1080"
   />
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue"
+import { onMounted, onUnmounted, ref } from "vue"
 
 const canvas = ref(null)
 const stars = []

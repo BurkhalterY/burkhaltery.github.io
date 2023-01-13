@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="text-2xl text-center my-4 px-2 py-1 bg-white rounded">
+    <h2 class="px-2 py-1 my-4 text-2xl text-center bg-white rounded">
       {{ t("music_i_listen_to") }}
     </h2>
     <Ranking :items="artists" :square="true" />
@@ -8,8 +8,8 @@
 </template>
 
 <script setup>
-import { useI18n } from "vue-i18n"
 import Ranking from "@/components/Ranking.vue"
+import { useI18n } from "vue-i18n"
 
 const artists = [
   {
@@ -28,7 +28,7 @@ const artists = [
     name: "Benab",
     image: "music/benab.jpg",
   },
-  {
+  /*{
     name: "Stromae",
     image: "music/stromae.jpg",
   },
@@ -39,7 +39,7 @@ const artists = [
   {
     name: "Hatsune Miku",
     image: "music/hatsune-miku.jpg",
-  },
+  },*/
   {
     name: "Alex le R",
     image: "music/alex-le-r.jpg",

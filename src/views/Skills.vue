@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-white rounded px-10 py-5 max-w-3xl">
-    <h2 class="text-2xl text-center mb-5">Mes compétences</h2>
+  <div class="max-w-3xl px-10 py-5 bg-white rounded">
+    <h2 class="mb-5 text-2xl text-center">Mes compétences</h2>
     <div v-for="category of categories">
-      <h3 class="text-xl mb-1 mt-5">{{ category.name }} :</h3>
+      <h3 class="mt-5 mb-1 text-xl">{{ category.name }} :</h3>
       <div class="flex flex-wrap gap-5">
         <div v-for="skill of category.skills">
           <img
@@ -11,7 +11,7 @@
             :title="skill.shortName || skill.name"
             class="object-contain w-20 h-20"
           />
-          <div class="text-center mx-auto max-w-min">
+          <div class="mx-auto text-center max-w-min">
             {{ skill.shortName || skill.name }}
           </div>
         </div>
@@ -22,31 +22,31 @@
 
 <script setup>
 import {
-  html,
-  css,
-  javascript,
-  vueJs,
-  tailwind,
-  bootstrap,
-  jQuery,
-  php,
-  mySql,
-  python,
-  cSharp,
-  java,
-  word,
-  excel,
-  powerPoint,
-  publisher,
   access,
-  vba,
-  windows,
-  ubuntu,
   android,
-  git,
+  bootstrap,
   cli,
+  cSharp,
+  css,
+  excel,
+  git,
+  html,
+  java,
+  javascript,
+  jQuery,
+  mySql,
   paintDotNet,
+  php,
+  powerPoint,
   premierePro,
+  publisher,
+  python,
+  tailwind,
+  ubuntu,
+  vba,
+  vueJs,
+  windows,
+  word,
 } from "@/data/skills.json"
 
 const categories = [

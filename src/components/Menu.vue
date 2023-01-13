@@ -1,10 +1,10 @@
 <template>
   <nav class="w-full text-white">
     <ul class="m-1">
-      <li class="sm:inline-block m-1 text-center sm:float-right">
+      <li class="m-1 text-center sm:inline-block sm:float-right">
         <div class="p-1">Yannis Burkhalter &copy;</div>
       </li>
-      <li class="sm:inline-block m-1 text-center sm:float-right">
+      <li class="m-1 text-center sm:inline-block sm:float-right">
         <router-link
           class="block p-1 uppercase"
           :to="{
@@ -15,11 +15,11 @@
           {{ locale }}
         </router-link>
       </li>
-      <li v-for="item of menu" class="sm:inline-block m-1 sm:mx-1 text-center">
+      <li v-for="item of menu" class="m-1 text-center sm:inline-block sm:mx-1">
         <router-link
           :to="{ name: item.route, params: { locale } }"
           class="block p-1 rounded hover:bg-white hover:text-black"
-          active-class="bg-white text-black"
+          active-class="text-black bg-white"
         >
           {{ t(item.name) }}
         </router-link>

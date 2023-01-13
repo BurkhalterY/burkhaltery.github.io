@@ -1,6 +1,5 @@
+import { getLocale, setI18nLanguage, SUPPORT_LOCALES } from "@/i18n"
 import { createRouter, createWebHistory } from "vue-router"
-import { useI18n } from "vue-i18n"
-import { SUPPORT_LOCALES, getLocale, setI18nLanguage } from "@/i18n"
 
 const locale = getLocale()
 

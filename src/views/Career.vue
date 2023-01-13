@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white rounded px-10 py-5 max-w-3xl">
+  <div class="max-w-3xl px-10 py-5 bg-white rounded">
     <table>
       <template v-for="(group, index) of experiences">
         <tr>
@@ -15,7 +15,7 @@
         <template v-for="company of group.companies">
           <tr>
             <td colspan="5">
-              <h3 class="text-xl mt-5 mb-1">
+              <h3 class="mt-5 mb-1 text-xl">
                 {{ company.name }},
                 <span class="text-lg">{{ company.location }}</span>
               </h3>
@@ -29,7 +29,7 @@
               <td v-if="place.start != place.end">-</td>
               <td v-if="place.start != place.end">
                 <span v-if="place.end">{{ place.end }}</span>
-                <span v-else class="text-xs mr-2">{{ t("today") }}</span>
+                <span v-else class="mr-2 text-xs">{{ t("today") }}</span>
               </td>
               <td>{{ place.job[locale] }}</td>
             </tr>
@@ -45,7 +45,7 @@
                     :src="`/images/skills/${skill.icon}`"
                     :alt="skill.name"
                     :title="skill.name"
-                    class="object-contain align-text-bottom inline w-6 h-6 mx-px"
+                    class="inline object-contain w-6 h-6 mx-px align-text-bottom"
                   />
                 </div>
               </td>
@@ -59,14 +59,13 @@
 </template>
 
 <script setup>
-import { useI18n } from "vue-i18n"
 import {
   android,
   androidStudio,
   angular,
   bootstrap,
-  cSharp,
   codeIgniter,
+  cSharp,
   css,
   html,
   java,
@@ -83,6 +82,7 @@ import {
   ubuntu,
   vueJs,
 } from "@/data/skills.json"
+import { useI18n } from "vue-i18n"
 
 const { t, locale } = useI18n({
   messages: {
@@ -130,7 +130,7 @@ const experiences = [
             end: 2022,
             description: {
               fr: "Dernière année d'apprentissage chez Open Net, intégrateur Odoo.",
-              en: "I have did my last year of apprenticeship at Open Net, Odoo integrator.",
+              en: "I did my last year of apprenticeship at Open Net, Odoo integrator.",
             },
             skills: [odoo, python, vueJs, tailwind, ubuntu],
           },
@@ -149,7 +149,7 @@ const experiences = [
             end: 2021,
             description: {
               fr: "Apprentissage en informatique, orienté développement d'applications. J'ai, entre autres, participé au développement d'un gestionnaire de stock en PHP avec le framework CodeIgniter.",
-              en: "I have did the 3 first years of my apprenticeship at Orif, with somes stages on many others companies.",
+              en: "I did the 3 first years of my apprenticeship at Orif, with somes stages on many others companies.",
             },
             skills: [bootstrap, php, mySql, codeIgniter],
           },
@@ -162,7 +162,7 @@ const experiences = [
             end: 2018,
             description: {
               fr: "Préformation d'un an au sein de la section informatique de Pomy.",
-              en: "Before starting my apprenticeship, I have did a pre-training at Orif where I have learned the IT and development basics.",
+              en: "Before starting my apprenticeship, I did a pre-training at Orif where I have learned the IT and development basics.",
             },
             skills: [html, css, javascript, justBasic],
           },
@@ -235,7 +235,7 @@ const experiences = [
             end: 2021,
             description: {
               fr: "Stage de 9 mois chez Quicksite, agence web, chez qui j'ai développé une interface de traduction pour Laravel.",
-              en: "9 months stage at Quicksite, where I have developed an translation interface with Laravel.",
+              en: "9 months stage at Quicksite, where I developed a translation interface with Laravel.",
             },
             skills: [php, laravel],
           },
@@ -254,7 +254,7 @@ const experiences = [
             end: 2020,
             description: {
               fr: "Stage de 2 mois au SIT de l'Orif où j'étais chargé de développer un logiciel interne.",
-              en: "2 months stage at Orif SIT, where I have developed an internal software in C# and PowerShell.",
+              en: "2 months stage at Orif SIT, where I developed an internal software in C# and PowerShell.",
             },
             skills: [cSharp, powerShell],
           },
@@ -273,7 +273,7 @@ const experiences = [
             end: 2019,
             description: {
               fr: "Stage de 5 mois durant lequel j'ai participé au développement d'applications Android avec Java et Kotlin.",
-              en: "5 months stage at Creatis, where I have ported iOS applications to Android.",
+              en: "5 months stage at Creatis, where I ported iOS applications to Android.",
             },
             skills: [android, java, kotlin, androidStudio],
           },

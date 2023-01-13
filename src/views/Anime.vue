@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="text-2xl text-center my-4 px-2 py-1 bg-white rounded">
+    <h2 class="px-2 py-1 my-4 text-2xl text-center bg-white rounded">
       {{ t("my_favorite_animes") }}
     </h2>
     <Ranking :items="anime" />

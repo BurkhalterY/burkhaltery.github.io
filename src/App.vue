@@ -1,7 +1,7 @@
 <template>
-  <div class="min-h-screen h-full flex flex-col">
+  <div class="flex flex-col h-full min-h-screen">
     <Menu />
-    <div class="grow flex justify-center items-center my-32">
+    <div class="flex items-center justify-center my-32 grow">
       <router-view v-slot="{ Component }">
         <transition mode="out-in">
           <component :is="Component" />
@@ -13,6 +13,6 @@
 </template>
 
 <script setup>
-import Menu from "@/components/Menu.vue"
 import Background from "@/components/Background.vue"
+import Menu from "@/components/Menu.vue"
 </script>

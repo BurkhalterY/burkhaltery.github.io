@@ -1,5 +1,5 @@
 <template>
-  <div class="flex md:grid md:grid-cols-3 gap-4 pt-6 flex-col md:flex-row">
+  <div class="flex flex-col gap-4 pt-6 md:grid md:grid-cols-3 md:flex-row">
     <div
       v-for="(item, i) of items"
       class="mx-auto"
@@ -8,7 +8,7 @@
       <span class="relative mx-auto">
         <span
           v-if="i < 3"
-          class="absolute -top-2 left-26 rounded-full w-12 h-12 flex justify-center items-center font-bold text-2xl text-black/40"
+          class="absolute flex items-center justify-center w-12 h-12 text-2xl font-bold rounded-full -top-2 left-26 text-black/40"
           :style="`background-color: #${meta[i].color};`"
         >
           {{ meta[i].position }}
@@ -17,11 +17,11 @@
       <img
         :src="`/images/${item.image}`"
         :alt="item.name"
-        class="rounded-t w-64 object-cover"
+        class="object-cover w-64 rounded-t"
         :class="square ? 'h-64' : 'h-96'"
       />
-      <div class="bg-white rounded-b w-64" :class="i < 3 ? meta[i].height : ''">
-        <h3 class="text-lg text-center p-1">
+      <div class="w-64 bg-white rounded-b" :class="i < 3 ? meta[i].height : ''">
+        <h3 class="p-1 text-lg text-center">
           {{ item.name }}
         </h3>
       </div>
