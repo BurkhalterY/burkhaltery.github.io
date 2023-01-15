@@ -43,7 +43,6 @@ const questions = [
       fr: "L'eau, sans hésitation ! Mais pas froide, plutôt à température ambiante.",
       en: "Water for sure! But not cold water, only temperate water.",
     },
-    show: false,
   },
   {
     question: {
@@ -54,7 +53,6 @@ const questions = [
       fr: "Je ne me considère pas comme un wesh-wesh, mais il est vrai que j'apprécie certains aspects de leur culture.",
       en: "I'm not wesh-wesh, but I like some points of their culture.",
     },
-    show: false,
   },
   {
     question: {
@@ -65,7 +63,6 @@ const questions = [
       fr: "Tu sais à quoi ça sert, un manche à couilles ? À rien, un MÀC ne sert à rien.",
       en: null,
     },
-    show: false,
   },
 ]
 </script>

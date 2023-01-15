@@ -38,17 +38,17 @@
 </template>
 
 <script setup>
-import { useI18n } from "vue-i18n"
 import {
   androidStudio,
-  cSharp,
   codeIgniter,
+  cSharp,
   java,
   javascript,
   mySql,
   php,
   vueJs,
 } from "@/data/skills.json"
+import { useI18n } from "vue-i18n"
 
 const { t, locale } = useI18n({
   messages: {
@@ -115,7 +115,7 @@ const projects = [
     dateRange: "janv. 2018",
     description: {
       fr: "Un site de jeu dans lequel il faut reproduire un dessin en 45 secondes selon un modèle (similaire à Pokedraw.net qui est maintenant down). Il y a plusieurs modes de jeu.",
-      en: "A drawing website where you have to reproduce a model in only 45″. There are a lot of game modes and explore the gallery may be very funny!",
+      en: 'A drawing website where you have to reproduce a model in only 45". There are a lot of game modes and explore the gallery may be very funny!',
     },
   },
 ]
