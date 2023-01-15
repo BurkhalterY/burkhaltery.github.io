@@ -8,7 +8,6 @@
 </template>
 
 <script setup>
-/*
 import { onMounted, onUnmounted, ref } from "vue"
 
 const canvas = ref(null)
@@ -44,5 +43,4 @@ onMounted(() => {
 })
 
 onUnmounted(() => clearInterval(intervalId))
-*/
 </script>
