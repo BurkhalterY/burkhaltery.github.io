@@ -73,10 +73,6 @@ const menu = [
     route: "Hobbies",
   },
   {
-    name: "faq",
-    route: "FAQ",
-  },
-  {
     name: "social_networks",
     route: "Socials",
   },
