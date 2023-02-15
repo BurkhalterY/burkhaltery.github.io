@@ -39,7 +39,9 @@
           </tr>
           <tr>
             <td>{{ t("status") }}</td>
-            <td>{{ t("status_value") }}</td>
+            <td>
+              <a href="https://tinder.com/@YBU" target="_blank">{{ t("status_value") }}</a>
+            </td>
           </tr>
           <tr>
             <td>{{ t("favorite_browser") }}</td>
