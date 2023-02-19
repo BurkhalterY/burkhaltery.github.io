@@ -14,16 +14,21 @@
           {{ meta[i].position }}
         </span>
       </span>
-      <img
-        :src="`/images/${item.image}`"
-        :alt="item.name"
-        class="object-cover w-64 rounded-t"
-      />
-      <div class="w-64 bg-white rounded-b" :class="i < 3 ? meta[i].height : ''">
-        <h3 class="p-1 text-lg text-center">
-          {{ item.name }}
-        </h3>
-      </div>
+      <a :href="item.url" target="_blank">
+        <img
+          :src="`/images/${item.image}`"
+          :alt="item.name"
+          class="object-cover w-64 rounded-t"
+        />
+        <div
+          class="w-64 bg-white rounded-b"
+          :class="i < 3 ? meta[i].height : ''"
+        >
+          <h3 class="p-1 text-lg text-center">
+            {{ item.name }}
+          </h3>
+        </div>
+      </a>
     </div>
   </div>
 </template>

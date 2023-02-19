@@ -44,6 +44,11 @@ const artists = [
     name: "Alex le R",
     image: "music/alex-le-r.jpg",
   },
+  {
+    name: "Spotify playlist",
+    image: "music/spotify.jpg",
+    url: "https://open.spotify.com/playlist/1JEsoumeZooUqDdWwPTT1F",
+  },
 ]
 
 const { t } = useI18n({
