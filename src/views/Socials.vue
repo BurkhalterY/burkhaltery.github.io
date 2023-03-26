@@ -2,12 +2,12 @@
   <div class="px-8 pb-4 bg-white rounded">
     <h2 class="my-4 text-2xl text-center">{{ t("contact_me") }}</h2>
     <div class="grid grid-cols-3 gap-8">
-      <a v-for="social of socials" target="_blank" :href="social.link" :class="social.classes">
+      <a v-for="social of socials" target="_blank" :href="social.link" :class="social.aClasses">
         <img
           :src="`/images/socials/${social.icon}`"
           :alt="social.name"
           :title="social.name"
-          class="object-contain w-16 h-16"
+          :class="social.imgClasses || 'object-contain w-16 h-16'"
         />
       </a>
     </div>
@@ -63,7 +63,8 @@ const socials = [
     name: "Buy Me A Coffee",
     icon: "buymeacoffee.png",
     link: "https://www.buymeacoffee.com/aestetica",
-    classes: "col-span-3 -mt-4",
+    aClasses: "col-span-3 -mt-4",
+    imgClasses: "h-16 mx-auto",
   },
 ]
 </script>
