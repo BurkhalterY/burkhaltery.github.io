@@ -2,7 +2,7 @@
   <div class="px-8 pb-4 bg-white rounded">
     <h2 class="my-4 text-2xl text-center">{{ t("contact_me") }}</h2>
     <div class="grid grid-cols-3 gap-8">
-      <a v-for="social of socials" target="_blank" :href="social.link">
+      <a v-for="social of socials" target="_blank" :href="social.link" :class="social.classes">
         <img
           :src="`/images/socials/${social.icon}`"
           :alt="social.name"
@@ -58,6 +58,12 @@ const socials = [
     name: "Twitter",
     icon: "twitter.svg",
     link: "https://twitter.com/DevVenere",
+  },
+  {
+    name: "Buy Me A Coffee",
+    icon: "buymeacoffee.png",
+    link: "https://www.buymeacoffee.com/aestetica",
+    classes: "col-span-3 -mt-4",
   },
 ]
 </script>
