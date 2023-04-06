@@ -2,7 +2,7 @@
   <div class="p-5 bg-white rounded">
     <div class="grid grid-cols-5 gap-5">
       <div class="sm:col-span-2">
-        <img class="w-64 rounded" :src="`/images/pp/${pp}`" />
+        <img class="rounded" :class="pp.class" :src="`/images/pp/${pp.path}`" />
       </div>
       <div class="col-span-4 font-mono sm:col-span-3">
         <h1 class="text-3xl">Yannis Burkhalter</h1>
@@ -95,5 +95,5 @@ const { t } = useI18n({
   },
 })
 
-const pp = Math.random() <= 0.95 ? "aestetica.png" : "MadScientist.png"
+const pp = Math.random() <= 0.95 ? {class="w-64", path: "aestetica.png"} : {class="w-48", path: "MadScientist.png"}
 </script>
