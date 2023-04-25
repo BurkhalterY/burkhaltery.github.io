@@ -41,7 +41,6 @@ const { t, locale } = useI18n({
       career: "Parcours",
       projects: "Projets",
       hobbies: "Hobbies",
-      faq: "FAQ",
       social_networks: "Réseaux sociaux",
     },
     en: {
@@ -49,7 +48,6 @@ const { t, locale } = useI18n({
       career: "Career",
       projects: "Projects",
       hobbies: "Hobbies",
-      faq: "FAQ",
       social_networks: "Socials networks",
     },
   },

@@ -15,32 +15,32 @@ const games = [
   {
     name: "Mario Kart 8 Deluxe",
     year: 2017,
-    image: "gaming/mk8dx.jpg",
+    image: "gaming/mk8dx.webp",
   },
   {
     name: "Attack on Titan Tribute Game",
     year: 2014,
-    image: "gaming/aottg.jpg",
+    image: "gaming/aottg.webp",
   },
   {
     name: "Portal 2",
     year: 2011,
-    image: "gaming/portal2.jpg",
+    image: "gaming/portal2.webp",
   },
   {
     name: "Ultimate Chicken Horse",
     year: 2016,
-    image: "gaming/chicken-horse.jpg",
+    image: "gaming/chicken-horse.webp",
   },
   {
     name: "Super Paper Mario",
     year: 2007,
-    image: "gaming/super-paper-mario.jpg",
+    image: "gaming/super-paper-mario.webp",
   },
   {
     name: "Mario & Luigi: Bowser's Inside Story",
     year: 2009,
-    image: "gaming/ml-rpg3-bis.jpg",
+    image: "gaming/ml-rpg3-bis.webp",
   },
 ]
 

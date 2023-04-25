@@ -60,23 +60,14 @@
 
 <script setup>
 import {
-  android,
-  androidStudio,
   angular,
   bootstrap,
   codeIgniter,
   cSharp,
-  css,
-  html,
   java,
-  javascript,
-  justBasic,
-  kotlin,
-  laravel,
   mySql,
   odoo,
   php,
-  powerShell,
   python,
   tailwind,
   ubuntu,
@@ -129,7 +120,7 @@ const experiences = [
             start: 2021,
             end: 2022,
             description: {
-              fr: "Dernière année d'apprentissage chez Open Net, intégrateur Odoo.",
+              fr: "Dernière année d'apprentissage effectuée chez Open Net, intégrateur Odoo.",
               en: "I did my last year of apprenticeship at Open Net, Odoo integrator.",
             },
             skills: [odoo, python, vueJs, tailwind, ubuntu],
@@ -145,26 +136,13 @@ const experiences = [
               fr: "Apprenti informaticien",
               en: "IT apprentice",
             },
-            start: 2018,
+            start: 2017,
             end: 2021,
             description: {
-              fr: "Apprentissage en informatique, orienté développement d'applications. J'ai, entre autres, participé au développement d'un gestionnaire de stock en PHP avec le framework CodeIgniter.",
-              en: "I did the 3 first years of my apprenticeship at Orif, with somes stages on many others companies.",
+              fr: "Apprentissage en informatique, orienté développement d'applications, commencé à l'Orif, durant lequel j'ai pu effectuer plusieurs stages en entreprise.",
+              en: "I start my apprenticeship at Orif, with somes stages on many others companies.",
             },
             skills: [bootstrap, php, mySql, codeIgniter],
-          },
-          {
-            job: {
-              fr: "Préformation",
-              en: "Pre-training",
-            },
-            start: 2017,
-            end: 2018,
-            description: {
-              fr: "Préformation d'un an au sein de la section informatique de Pomy.",
-              en: "Before starting my apprenticeship, I did a pre-training at Orif where I have learned the IT and development basics.",
-            },
-            skills: [html, css, javascript, justBasic],
           },
         ],
       },
@@ -211,71 +189,6 @@ const experiences = [
               en: "4 year apprenticeship, finish with a «\xa0good\xa0» mention.",
             },
             skills: [java, cSharp, angular],
-          },
-        ],
-      },
-    ],
-  },
-  {
-    name: {
-      fr: "Stages",
-      en: "Stages",
-    },
-    companies: [
-      {
-        name: "Quicksite SA",
-        location: "Vevey",
-        places: [
-          {
-            job: {
-              fr: "Stage de développeur PHP",
-              en: "PHP developer stage",
-            },
-            start: 2020,
-            end: 2021,
-            description: {
-              fr: "Stage de 9 mois chez Quicksite, agence web, chez qui j'ai développé une interface de traduction pour Laravel.",
-              en: "9 months stage at Quicksite, where I developed a translation interface with Laravel.",
-            },
-            skills: [php, laravel],
-          },
-        ],
-      },
-      {
-        name: "Orif SIT",
-        location: "Préverenges",
-        places: [
-          {
-            job: {
-              fr: "Stage de développeur C#",
-              en: "C# developer stage",
-            },
-            start: 2020,
-            end: 2020,
-            description: {
-              fr: "Stage de 2 mois au SIT de l'Orif où j'étais chargé de développer un logiciel interne.",
-              en: "2 months stage at Orif SIT, where I developed an internal software in C# and PowerShell.",
-            },
-            skills: [cSharp, powerShell],
-          },
-        ],
-      },
-      {
-        name: "Creatis Informatique",
-        location: "Préverenges",
-        places: [
-          {
-            job: {
-              fr: "Stage de développeur Android",
-              en: "Android developer stage",
-            },
-            start: 2019,
-            end: 2019,
-            description: {
-              fr: "Stage de 5 mois durant lequel j'ai participé au développement d'applications Android avec Java et Kotlin.",
-              en: "5 months stage at Creatis, where I ported iOS applications to Android.",
-            },
-            skills: [android, java, kotlin, androidStudio],
           },
         ],
       },

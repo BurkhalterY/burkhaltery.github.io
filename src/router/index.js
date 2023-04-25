@@ -15,11 +15,6 @@ const routes = [
     component: () => import("@/views/Career.vue"),
   },
   {
-    path: "/:locale/skills",
-    name: "Skills",
-    component: () => import("@/views/Skills.vue"),
-  },
-  {
     path: "/:locale/projects",
     name: "Projects",
     component: () => import("@/views/Projects.vue"),
@@ -46,11 +41,6 @@ const routes = [
         component: () => import("@/views/Gaming.vue"),
       },
     ],
-  },
-  {
-    path: "/:locale/faq",
-    name: "FAQ",
-    component: () => import("@/views/Faq.vue"),
   },
   {
     path: "/:locale/socials",

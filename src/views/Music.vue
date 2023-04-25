@@ -14,39 +14,27 @@ import { useI18n } from "vue-i18n"
 const artists = [
   {
     name: "Renaud",
-    image: "music/renaud.jpg",
-  },
-  {
-    name: "Jul",
-    image: "music/jul.jpg",
-  },
-  {
-    name: "Louise Attaque",
-    image: "music/louise-attaque.jpg",
+    image: "music/renaud.webp",
   },
   {
     name: "Benab",
-    image: "music/benab.jpg",
-  },
-  /*{
-    name: "Stromae",
-    image: "music/stromae.jpg",
+    image: "music/benab.webp",
   },
   {
-    name: "Johnny Hallyday",
-    image: "music/johnny-hallyday.jpg",
+    name: "Louise Attaque",
+    image: "music/louise-attaque.webp",
   },
   {
-    name: "Hatsune Miku",
-    image: "music/hatsune-miku.jpg",
-  },*/
+    name: "Jul",
+    image: "music/jul.webp",
+  },
   {
     name: "Alex le R",
-    image: "music/alex-le-r.jpg",
+    image: "music/alex-le-r.webp",
   },
   {
     name: "Spotify playlist",
-    image: "music/spotify.jpg",
+    image: "music/spotify.webp",
     url: "https://open.spotify.com/playlist/1JEsoumeZooUqDdWwPTT1F",
   },
 ]
