@@ -38,12 +38,12 @@ const { t } = useI18n({
   messages: {
     fr: {
       music: "Musique",
-      anime: "Animes",
+      anime: "Anime",
       gaming: "Jeux vidéo",
     },
     en: {
       music: "Music",
-      anime: "Animes",
+      anime: "Anime",
       gaming: "Gaming",
     },
   },

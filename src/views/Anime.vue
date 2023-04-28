@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 class="px-2 py-1 my-4 text-2xl text-center bg-white rounded">
-      {{ t("my_favorite_animes") }}
+      {{ t("my_favorite_anime") }}
     </h2>
     <Ranking :items="anime" />
   </div>
@@ -47,10 +47,10 @@ const anime = [
 const { t } = useI18n({
   messages: {
     fr: {
-      my_favorite_animes: "Mes animes préférés",
+      my_favorite_anime: "Mes anime préférés",
     },
     en: {
-      my_favorite_animes: "My favorite animes",
+      my_favorite_anime: "My favorite anime",
     },
   },
 })
