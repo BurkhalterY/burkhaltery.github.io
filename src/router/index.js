@@ -43,9 +43,9 @@ const routes = [
     ],
   },
   {
-    path: "/:locale/socials",
-    name: "Socials",
-    component: () => import("@/views/Socials.vue"),
+    path: "/:locale/contact",
+    name: "Contact",
+    component: () => import("@/views/Contact.vue"),
   },
   {
     path: "/:pathMatch(.*)*",

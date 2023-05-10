@@ -38,16 +38,6 @@
 </template>
 
 <script setup>
-import {
-  androidStudio,
-  codeIgniter,
-  cSharp,
-  java,
-  javascript,
-  mySql,
-  php,
-  vueJs,
-} from "@/data/skills.json"
 import { useI18n } from "vue-i18n"
 
 const { t, locale } = useI18n({
@@ -69,7 +59,7 @@ const projects = [
     },
     image: "projects/prog-normalux.webp",
     link: "https://epsic.burkhalter.dev",
-    skills: [vueJs],
+    skills: [{ name: "Vue.js", icon: "vuejs.svg" }],
     dateRange: "janv. 2019 - juil. 2022",
     description: {
       fr: "Un site qui reprend et réexplique les modules d'informatique que j'ai vu en première année dans le but d'aider mes camarades. Depuis, chaque classe de première année l'utilise.",
@@ -83,7 +73,7 @@ const projects = [
     },
     image: "projects/bataille-navale.webp",
     link: "https://github.com/BurkhalterY/EPSIC_Bataille_Navale/releases",
-    skills: [cSharp],
+    skills: [{ name: "C#", icon: "csharp.svg" }],
     dateRange: "nov. 2019",
     description: {
       fr: "Jeu réalisé dans le cadre de l'EPSIC. C'est un jeu de bataille navale classique avec quelques fonctionnalités supplémentaires telles que des sonars et des bombes nucléaires.",
@@ -97,7 +87,11 @@ const projects = [
     },
     image: "projects/use-your-cheats.webp",
     link: "https://github.com/BurkhalterY/UseYourCheats/releases",
-    skills: [androidStudio, java, javascript],
+    skills: [
+      { name: "Android", icon: "android.svg" },
+      { name: "Java", icon: "java.svg" },
+      { name: "JavaScript", icon: "javascript.svg" },
+    ],
     dateRange: "août 2019",
     description: {
       fr: "Petite application Android qui exploite une faille du jeu Use Your Words. Cela permet de connaître la house answer et de voter pour soi-même.",
@@ -111,7 +105,11 @@ const projects = [
     },
     image: "projects/normalux.webp",
     link: "https://www.normalux.ch",
-    skills: [codeIgniter, php, mySql],
+    skills: [
+      { name: "CodeIgniter", icon: "codeigniter.svg" },
+      { name: "PHP", icon: "php.svg" },
+      { name: "SQL", icon: "mysql.svg" },
+    ],
     dateRange: "janv. 2018",
     description: {
       fr: "Un site de jeu dans lequel il faut reproduire un dessin en 45 secondes selon un modèle (similaire à Pokedraw.net qui est maintenant down). Il y a plusieurs modes de jeu.",

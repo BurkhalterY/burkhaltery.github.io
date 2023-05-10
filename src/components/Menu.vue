@@ -41,14 +41,14 @@ const { t, locale } = useI18n({
       career: "Parcours",
       projects: "Projets",
       hobbies: "Hobbies",
-      social_networks: "Réseaux sociaux",
+      contact: "Contact",
     },
     en: {
       introduction: "Introduction",
       career: "Career",
       projects: "Projects",
       hobbies: "Hobbies",
-      social_networks: "Socials networks",
+      contact: "Contact",
     },
   },
 })
@@ -71,8 +71,8 @@ const menu = [
     route: "Hobbies",
   },
   {
-    name: "social_networks",
-    route: "Socials",
+    name: "contact",
+    route: "Contact",
   },
 ]
 </script>

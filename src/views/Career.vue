@@ -59,20 +59,6 @@
 </template>
 
 <script setup>
-import {
-  angular,
-  bootstrap,
-  codeIgniter,
-  cSharp,
-  java,
-  mySql,
-  odoo,
-  php,
-  python,
-  tailwind,
-  ubuntu,
-  vueJs,
-} from "@/data/skills.json"
 import { useI18n } from "vue-i18n"
 
 const { t, locale } = useI18n({
@@ -110,7 +96,12 @@ const experiences = [
               fr: "Customisation Odoo et développement Vue.js.",
               en: "Odoo customization & Vue.js.",
             },
-            skills: [],
+            skills: [
+              { name: "Odoo", icon: "odoo.svg" },
+              { name: "Python", icon: "python.svg" },
+              { name: "Vue 3", icon: "vuejs.svg" },
+              { name: "Ubuntu", icon: "ubuntu.svg" },
+            ],
           },
           {
             job: {
@@ -123,7 +114,7 @@ const experiences = [
               fr: "Dernière année d'apprentissage effectuée chez Open Net, intégrateur Odoo.",
               en: "I did my last year of apprenticeship at Open Net, Odoo integrator.",
             },
-            skills: [odoo, python, vueJs, tailwind, ubuntu],
+            skills: [],
           },
         ],
       },
@@ -142,7 +133,11 @@ const experiences = [
               fr: "Apprentissage en informatique, orienté développement d'applications, commencé à l'Orif, durant lequel j'ai pu effectuer plusieurs stages en entreprise.",
               en: "I start my apprenticeship at Orif, with somes stages on many others companies.",
             },
-            skills: [bootstrap, php, mySql, codeIgniter],
+            skills: [
+              { name: "PHP", icon: "php.svg" },
+              { name: "SQL", icon: "mysql.svg" },
+              { name: "CodeIgniter", icon: "codeigniter.svg" },
+            ],
           },
         ],
       },
@@ -188,7 +183,11 @@ const experiences = [
               fr: "Apprentissage de 4 ans, terminée avec mention bien.",
               en: "4 year apprenticeship, finish with a «\xa0good\xa0» mention.",
             },
-            skills: [java, cSharp, angular],
+            skills: [
+              { name: "Java", icon: "java.svg" },
+              { name: "C#", icon: "csharp.svg" },
+              { name: "Angular", icon: "angular.svg" },
+            ],
           },
         ],
       },
