@@ -27,7 +27,7 @@
         class="w-64 bg-white rounded-b"
         :class="[i < 3 ? meta[i].height : '', i >= 3 ? 'md:w-48' : '']"
       >
-        <h3 class="p-1 text-lg text-center" :class="{ 'text-sm': i >= 3 }">
+        <h3 class="p-1 text-lg text-center" :class="{ 'md:text-sm': i >= 3 }">
           {{ item.name }}
         </h3>
       </div>
