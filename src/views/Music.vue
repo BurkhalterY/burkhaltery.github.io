@@ -5,7 +5,7 @@
       <a
         href="https://open.spotify.com/playlist/1JEsoumeZooUqDdWwPTT1F"
         target="_blank"
-        class="absolute right-1"
+        class="absolute -right-10 sm:right-1"
       >
         <img
           src="/images/socials/spotify.svg"
