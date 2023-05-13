@@ -34,7 +34,7 @@
             <td>aestetica#9521</td>
           </tr>
           <tr>
-            <td>{{ t("language") }}</td>
+            <td>{{ t("languages") }}</td>
             <td>🇫🇷 🇬🇧</td>
           </tr>
           <tr>
@@ -69,7 +69,7 @@ const { t } = useI18n({
       location_value: "Vevey, Suisse",
       email: "E-mail",
       discord: "Discord",
-      language: "Langue",
+      languages: "Langues",
       status: "Statut",
       status_value: "Célibataire",
       favorite_browser: "Navigateur préféré",
@@ -86,7 +86,7 @@ const { t } = useI18n({
       location_value: "Vevey, Switzerland",
       email: "E-mail",
       discord: "Discord",
-      language: "Language",
+      languages: "Languages",
       status: "Status",
       status_value: "Single",
       favorite_browser: "Favorite browser",

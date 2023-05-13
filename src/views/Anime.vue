@@ -42,6 +42,26 @@ const anime = [
     year: 2016,
     image: "anime/mob-psycho-100.webp",
   },
+  {
+    name: "Sword Art Online",
+    year: 2012,
+    image: "anime/sao.webp",
+  },
+  /*{
+    name: "Sonic X",
+    year: 2003,
+    image: "anime/sonic-x.webp",
+  },
+  {
+    name: "Ladybug PV",
+    year: 2012,
+    image: "anime/mlb.webp",
+  },
+  {
+    name: "The Super Mario Bros. Movie",
+    year: 2023,
+    image: "anime/super-mario-bros-movie.webp",
+  },*/
 ]
 
 const { t } = useI18n({

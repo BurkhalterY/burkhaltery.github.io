@@ -1,9 +1,12 @@
 <template>
-  <div class="flex flex-col gap-4 pt-6 md:grid md:grid-cols-3 md:flex-row">
+  <div class="flex flex-col gap-4 pt-6 md:grid md:grid-cols-12">
     <div
       v-for="(item, i) of items"
       class="mx-auto"
-      :class="i < 3 ? meta[i].class : ''"
+      :class="[
+        i < 3 ? meta[i].class : '',
+        i >= 3 ? 'col-span-3' : 'col-span-4',
+      ]"
     >
       <span class="relative mx-auto">
         <span
@@ -14,21 +17,20 @@
           {{ meta[i].position }}
         </span>
       </span>
-      <a :href="item.url" target="_blank">
-        <img
-          :src="`/images/${item.image}`"
-          :alt="item.name"
-          class="object-cover w-64 rounded-t"
-        />
-        <div
-          class="w-64 bg-white rounded-b"
-          :class="i < 3 ? meta[i].height : ''"
-        >
-          <h3 class="p-1 text-lg text-center">
-            {{ item.name }}
-          </h3>
-        </div>
-      </a>
+      <img
+        :src="`/images/${item.image}`"
+        :alt="item.name"
+        class="object-cover w-64 rounded-t"
+        :class="i >= 3 ? 'md:w-48' : ''"
+      />
+      <div
+        class="w-64 bg-white rounded-b"
+        :class="[i < 3 ? meta[i].height : '', i >= 3 ? 'md:w-48' : '']"
+      >
+        <h3 class="p-1 text-lg text-center" :class="{ 'text-sm': i >= 3 }">
+          {{ item.name }}
+        </h3>
+      </div>
     </div>
   </div>
 </template>

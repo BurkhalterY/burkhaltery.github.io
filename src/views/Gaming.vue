@@ -38,9 +38,14 @@ const games = [
     image: "gaming/super-paper-mario.webp",
   },
   {
-    name: "Mario & Luigi: Bowser's Inside Story",
+    name: "Mario & Luigi BIS",
     year: 2009,
-    image: "gaming/ml-rpg3-bis.webp",
+    image: "gaming/mario-luigi-rpg3.webp",
+  },
+  {
+    name: "Mario Kart Wii Deluxe",
+    year: 2018,
+    image: "gaming/mkwii-dx-blue.webp",
   },
 ]
 
