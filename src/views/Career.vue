@@ -181,7 +181,7 @@ const experiences = [
             end: 2022,
             description: {
               fr: "Apprentissage de 4 ans, terminée avec mention bien.",
-              en: "4 year apprenticeship, finish with a «\xa0good\xa0» mention.",
+              en: "4-year apprenticeship, finish with a «\xa0good\xa0» mention.",
             },
             skills: [
               { name: "Java", icon: "java.svg" },
