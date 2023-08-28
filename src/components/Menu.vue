@@ -59,20 +59,8 @@ const menu = [
     route: "Home",
   },
   {
-    name: "career",
-    route: "Career",
-  },
-  {
     name: "projects",
     route: "Projects",
-  },
-  {
-    name: "hobbies",
-    route: "Hobbies",
-  },
-  {
-    name: "contact",
-    route: "Contact",
   },
 ]
 </script>

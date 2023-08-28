@@ -1,97 +1,94 @@
+<script setup>
+const contacts = [
+  {
+    name: "E-mail",
+    profile: "yannis@burkhalter.dev",
+    icon: "email.png",
+    link: "mailto:yannis@burkhalter.dev",
+  },
+  {
+    name: "Discord",
+    profile: "aestetica",
+    icon: "discord.svg",
+    link: "https://discordapp.com/users/317230160124313610",
+  },
+  {
+    name: "GitHub",
+    profile: "BurkhalterY",
+    icon: "github.svg",
+    link: "https://github.com/BurkhalterY/",
+  },
+  {
+    name: "LinkedIn",
+    profile: "/in/yannis-burkhalter",
+    icon: "linkedin.svg",
+    link: "https://www.linkedin.com/in/yannis-burkhalter/",
+  },
+]
+</script>
+
 <template>
-  <div class="p-5 bg-white rounded">
-    <div class="grid grid-cols-5 gap-5">
+  <div class="p-4 bg-white rounded">
+    <div class="flex gap-4">
       <div class="sm:col-span-2">
         <img class="w-64 rounded" src="/images/pp/aestetica.webp" />
       </div>
       <div class="col-span-4 font-mono sm:col-span-3">
-        <h1 class="text-3xl">Yannis Burkhalter</h1>
-        <table class="w-full">
+        <h1 class="text-3xl mx-8">Yannis Burkhalter</h1>
+        <table class="w-full text-lg">
           <tr>
-            <td>{{ t("age") }}</td>
-            <td>{{ t("age_value") }}</td>
+            <td>Developer</td>
+            <td>at Open Net Sàrl</td>
           </tr>
           <tr>
-            <td>{{ t("job") }}</td>
-            <td>{{ t("job_value") }}</td>
+            <td>Country</td>
+            <td>🇨🇭</td>
           </tr>
           <tr>
-            <td>{{ t("occupation") }}</td>
-            <td>{{ t("occupation_value") }}</td>
+            <td>Languages</td>
+            <td>🇫🇷 🇬🇧</td>
           </tr>
           <tr>
-            <td>{{ t("location") }}</td>
-            <td>{{ t("location_value") }}</td>
-          </tr>
-          <tr>
-            <td>{{ t("email") }}</td>
+            <td>Email</td>
             <td>
               <a href="mailto:yannis@burkhalter.dev">yannis@burkhalter.dev</a>
             </td>
           </tr>
           <tr>
-            <td>{{ t("discord") }}</td>
-            <td>aestetica#9521</td>
+            <td>Discord</td>
+            <td>
+              <a href="https://discordapp.com/users/317230160124313610"
+                >aestetica</a
+              >
+            </td>
           </tr>
           <tr>
-            <td>{{ t("languages") }}</td>
-            <td>🇫🇷 🇬🇧</td>
-          </tr>
-          <tr>
-            <td>{{ t("status") }}</td>
-            <td>{{ t("status_value") }}</td>
-          </tr>
-          <tr>
-            <td>{{ t("favorite_browser") }}</td>
-            <td>{{ t("favorite_browser_value") }}</td>
+            <td>Favorite browser</td>
+            <td>Firefox</td>
           </tr>
         </table>
       </div>
     </div>
+    <div class="grid grid-cols-4 mt-4">
+      <a
+        v-for="contact of contacts"
+        target="_blank"
+        :href="contact.link"
+        class="text-center"
+      >
+        <img
+          :src="`/images/socials/${contact.icon}`"
+          :alt="contact.name"
+          :title="contact.name"
+          class="object-contain w-20 h-20 mx-auto"
+        />
+      </a>
+    </div>
   </div>
 </template>
 
-<script setup>
-import { useI18n } from "vue-i18n"
-
-const age = new Date(new Date() - new Date(2002, 2, 8)).getUTCFullYear() - 1970
-
-const { t } = useI18n({
-  messages: {
-    fr: {
-      age: "Âge",
-      age_value: `${age} ans`,
-      job: "Travail",
-      job_value: "Open Net Sàrl",
-      occupation: "Profession",
-      occupation_value: "Informaticien, développeur",
-      location: "Ville",
-      location_value: "Vevey, Suisse",
-      email: "E-mail",
-      discord: "Discord",
-      languages: "Langues",
-      status: "Statut",
-      status_value: "Célibataire",
-      favorite_browser: "Navigateur préféré",
-      favorite_browser_value: "Firefox",
-    },
-    en: {
-      age: "Age",
-      age_value: `${age} years old`,
-      job: "Job",
-      job_value: "Open Net Sàrl",
-      occupation: "Occupation",
-      occupation_value: "Developer",
-      location: "Location",
-      location_value: "Vevey, Switzerland",
-      email: "E-mail",
-      discord: "Discord",
-      languages: "Languages",
-      status: "Status",
-      status_value: "Single",
-      favorite_browser: "Favorite browser",
-      favorite_browser_value: "Firefox",
-    },
-  },
-})
-</script>
+<style scoped>
+table td {
+  @apply pr-4;
+}
+</style>
