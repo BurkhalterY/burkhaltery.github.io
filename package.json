@@ -8,12 +8,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.47",
-    "vue-i18n": "^9.2.2",
-    "vue-router": "^4.1.6"
+    "@heroicons/vue": "^2.0.18",
+    "vue": "^3.2.47"
   },
   "devDependencies": {
-    "@intlify/unplugin-vue-i18n": "^0.10.0",
     "@vitejs/plugin-vue": "^4.2.0",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.23",
