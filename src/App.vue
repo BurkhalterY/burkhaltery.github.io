@@ -4,7 +4,7 @@ import Home from "@/views/HomeView.vue"
 
 <template>
   <div
-    class="min-h-screen flex justify-center items-center bg-gradient-to-r from-cyan-500 to-blue-500"
+    class="flex items-center justify-center min-h-screen bg-fixed bg-gradient-to-r from-yellow-400 via-gray-50 to-teal-300"
   >
     <Home />
   </div>

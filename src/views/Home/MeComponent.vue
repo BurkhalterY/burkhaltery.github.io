@@ -26,6 +26,18 @@ const infos = [
 
 const contacts = [
   {
+    name: "Email",
+    profile: "yannis@burkhalter.dev",
+    icon: "thunderbird.svg",
+    link: "mailto:yannis@burkhalter.dev",
+  },
+  {
+    name: "Discord",
+    profile: "aestetica",
+    icon: "discord.svg",
+    link: "https://discordapp.com/users/317230160124313610",
+  },
+  {
     name: "GitHub",
     profile: "BurkhalterY",
     icon: "github.svg",
@@ -37,18 +49,6 @@ const contacts = [
     icon: "linkedin.svg",
     link: "https://www.linkedin.com/in/yannis-burkhalter/",
   },
-  {
-    name: "Discord",
-    profile: "aestetica",
-    icon: "discord.svg",
-    link: "https://discordapp.com/users/317230160124313610",
-  },
-  {
-    name: "Email",
-    profile: "yannis@burkhalter.dev",
-    icon: "email.png",
-    link: "mailto:yannis@burkhalter.dev",
-  },
 ]
 </script>
 
@@ -56,26 +56,20 @@ const contacts = [
   <div>
     <img
       src="https://avatars.githubusercontent.com/u/33062656"
-      class="max-h-20 sm:max-h-24 rounded float-right"
+      class="float-right rounded max-h-20 sm:max-h-24"
     />
-    <div class="mb-2 mx-auto w-max">
-      <h1 class="-ml-10 text-4xl tracking-wide text-black sm:text-6xl">
+    <div class="mx-auto mb-2 text-center w-max">
+      <h1 class="text-4xl tracking-wide text-black sm:text-6xl">
         <span>Yannis</span>
       </h1>
-      <p class="mt-2 text-lg font-semibold text-gray-900">
-        Developer <span class="font-thin">at</span> {{}}
-        <a
-          href="https://www.open-net.ch/"
-          target="_blank"
-          class="hover:text-gray-600"
-          >Open Net Sàrl</a
-        >
+      <p class="mt-2 text-sm font-semibold text-gray-900">
+        <span>Full Stack Developer</span>
       </p>
     </div>
     <div
       v-for="info in infos"
       :key="info.name"
-      class="py-4 grid grid-cols-3 gap-4"
+      class="grid grid-cols-3 gap-4 py-4"
     >
       <dt class="font-light text-gray-900">
         {{ info.name }}
