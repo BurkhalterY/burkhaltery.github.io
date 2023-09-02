@@ -95,17 +95,22 @@ const projects = [
 
 <template>
   <div
-    class="flex flex-col items-center justify-center w-full max-w-2xl gap-40 my-40"
+    class="flex flex-col items-center justify-center w-full max-w-2xl gap-1 sm:gap-40 sm:my-40"
   >
-    <div class="w-full overflow-hidden bg-white rounded-lg shadow">
+    <div class="w-full overflow-hidden bg-white shadow sm:rounded-lg">
       <Me class="px-4 py-5 sm:p-6" />
     </div>
     <div
       v-for="(project, i) in projects"
       :key="i"
-      class="w-full overflow-hidden bg-white rounded-lg shadow"
+      class="w-full overflow-hidden bg-white shadow sm:rounded-lg"
     >
       <Project :project="project" :sequence="i" class="px-4 py-5 sm:p-6" />
+    </div>
+    <div class="w-full overflow-hidden bg-white shadow sm:rounded-lg">
+      <div class="px-4 py-5 text-xs text-center text-gray-600 sm:p-6">
+        &copy; {{ new Date().getFullYear() }} Yannis Burkhalter
+      </div>
     </div>
   </div>
 </template>
