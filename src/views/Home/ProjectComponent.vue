@@ -8,11 +8,8 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="grid grid-cols-2 gap-5">
-    <div
-      class="flex flex-col gap-5"
-      :class="{ 'sm:order-1': sequence % 2 == 1 }"
-    >
+  <div class="grid gap-5 sm:grid-cols-2">
+    <div class="flex flex-col gap-5">
       <h2 class="text-3xl font-light text-center">{{ project.name }}</h2>
       <div class="flex justify-center gap-3">
         <img
@@ -25,6 +22,12 @@ const props = defineProps({
         />
       </div>
       <p class="text-justify">{{ project.description }}</p>
+      <img
+        :src="`/images/projects/${project.image}`"
+        :alt="project.name"
+        :title="project.name"
+        class="w-64 mx-auto sm:hidden"
+      />
       <ul class="ml-3">
         <li v-for="link in project.links" :key="link.name">
           <a
@@ -38,10 +41,12 @@ const props = defineProps({
         </li>
       </ul>
     </div>
-    <div>
-      <a target="_blank" :href="project.link">
-        <img :src="`/images/projects/${project.image}`" :alt="project.name" />
-      </a>
-    </div>
+    <img
+      :src="`/images/projects/${project.image}`"
+      :alt="project.name"
+      :title="project.name"
+      class="hidden sm:block"
+      :class="{ 'order-first': sequence % 2 != 0 }"
+    />
   </div>
 </template>

@@ -58,8 +58,8 @@ const contacts = [
       src="https://avatars.githubusercontent.com/u/33062656"
       class="float-right rounded max-h-20 sm:max-h-24"
     />
-    <div class="mx-auto mb-2 text-center w-max">
-      <h1 class="text-4xl tracking-wide text-black sm:text-6xl">
+    <div class="mb-2 ml-0 sm:text-center sm:mx-auto w-max">
+      <h1 class="text-4xl tracking-wide sm:text-6xl">
         <span>Yannis</span>
       </h1>
       <p class="mt-2 text-sm font-semibold text-gray-900">
@@ -69,7 +69,7 @@ const contacts = [
     <div
       v-for="info in infos"
       :key="info.name"
-      class="grid grid-cols-3 gap-4 py-4"
+      class="grid grid-cols-3 gap-4 py-2 my-4"
     >
       <dt class="font-light text-gray-900">
         {{ info.name }}
