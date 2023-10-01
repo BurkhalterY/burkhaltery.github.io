@@ -77,6 +77,10 @@ const projects = [
         name: "epsic.burkhalter.dev",
         url: "https://epsic.burkhalter.dev",
       },
+      {
+        name: "Repository",
+        url: "https://github.com/BurkhalterY/epsic.burkhalter.dev",
+      },
     ],
   },
   {
