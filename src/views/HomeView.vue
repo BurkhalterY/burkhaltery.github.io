@@ -98,23 +98,13 @@ const projects = [
 </script>
 
 <template>
-  <div
-    class="flex flex-col items-center justify-center w-full max-w-2xl gap-1 sm:gap-40 sm:my-40"
-  >
-    <div class="w-full overflow-hidden bg-white shadow sm:rounded-lg">
-      <Me class="px-4 py-5 sm:p-6" />
+  <div>
+    <Me />
+    <div v-for="(project, i) in projects" :key="i">
+      <Project :project="project" :sequence="i" />
     </div>
-    <div
-      v-for="(project, i) in projects"
-      :key="i"
-      class="w-full overflow-hidden bg-white shadow sm:rounded-lg"
-    >
-      <Project :project="project" :sequence="i" class="px-4 py-5 sm:p-6" />
-    </div>
-    <div class="w-full overflow-hidden bg-white shadow sm:rounded-lg">
-      <div class="px-4 py-5 text-xs text-center text-gray-600 sm:p-6">
-        &copy; {{ new Date().getFullYear() }} Yannis Burkhalter
-      </div>
+    <div class="mb-4 text-center md:mb-0">
+      &copy; {{ new Date().getFullYear() }} Yannis Burkhalter
     </div>
   </div>
 </template>
