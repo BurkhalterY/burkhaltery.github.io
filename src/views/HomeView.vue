@@ -19,11 +19,11 @@ const projects = [
         url: "https://etml.burkhalter.dev/",
       },
       {
-        name: "Frontend repository",
+        name: "frontend repository",
         url: "https://github.com/BurkhalterY/etml.burkhalter.dev",
       },
       {
-        name: "Backend repository",
+        name: "backend repository",
         url: "https://github.com/BurkhalterY/api.etml.burkhalter.dev",
       },
     ],
@@ -36,11 +36,11 @@ const projects = [
     image: "battleship.png",
     links: [
       {
-        name: "Repository",
+        name: "repository",
         url: "https://github.com/BurkhalterY/EPSIC_Bataille_Navale",
       },
       {
-        name: "Direct download",
+        name: "direct download",
         url: "https://github.com/BurkhalterY/EPSIC_Bataille_Navale/releases/download/v1.2-beta/EPSIC_Bataille_Navale.exe",
       },
     ],
@@ -57,11 +57,11 @@ const projects = [
     image: "use-your-cheats.png",
     links: [
       {
-        name: "Repository",
+        name: "repository",
         url: "https://github.com/BurkhalterY/UseYourCheats",
       },
       {
-        name: "Direct download (APK)",
+        name: "direct download (APK)",
         url: "https://github.com/BurkhalterY/UseYourCheats/releases/download/1.1/use-your-words-1.1.apk",
       },
     ],
@@ -78,13 +78,13 @@ const projects = [
         url: "https://epsic.burkhalter.dev",
       },
       {
-        name: "Repository",
+        name: "repository",
         url: "https://github.com/BurkhalterY/epsic.burkhalter.dev",
       },
     ],
   },
   {
-    name: "Normalux.ch",
+    name: "normalux.ch",
     description:
       'A drawing mini game. You have to reproduce a model in only 45". There are a lot of modes, and exploring the gallery may be very funny!',
     skills: [
