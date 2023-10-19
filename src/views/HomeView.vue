@@ -69,7 +69,7 @@ const projects = [
   {
     name: "epsic.burkhalter.dev",
     description:
-      "A website intended for my former classmates. It contents summary of some our first year of apprenticeship courses at EPSIC.",
+      "A website intended for my former classmates. It contains a summary of some of our first year of apprenticeship courses at EPSIC.",
     skills: [{ name: "Vue.js", icon: "vuejs.svg" }],
     image: "epsic-burkhalter-dev.png",
     links: [
