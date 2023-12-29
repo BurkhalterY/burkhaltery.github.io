@@ -90,6 +90,10 @@ const contacts = [
           />
         </a>
       </div>
+      <img
+        src="https://komarev.com/ghpvc/?username=BurkhalterY"
+        class="mx-auto mt-2 no-border"
+      />
     </div>
   </div>
 </template>
