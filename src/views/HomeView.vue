@@ -6,7 +6,7 @@ const projects = [
   {
     name: "etml.burkhalter.dev",
     description:
-      'The "digitized" version of my diary at ETML, synchronized for the happiness of all my classmates.',
+      'The "digitized" version of my diary from ETML, synchronized for the happiness of all my classmates.',
     skills: [
       { name: "Vue.js", icon: "vuejs.svg" },
       { name: "Python", icon: "python.svg" },
@@ -31,7 +31,7 @@ const projects = [
   {
     name: "Battleship",
     description:
-      'A fully functional battleship game with a lot of additional features like "sonars" and "nuclear bombs".',
+      'A fully functional battleship game with numerous additional features like "sonars" and "nuclear bombs".',
     skills: [{ name: "C#", icon: "csharp.svg" }],
     image: "battleship.png",
     links: [
@@ -48,7 +48,7 @@ const projects = [
   {
     name: "Use Your Cheats",
     description:
-      "A small Android application exploiting a flaw on the Use Your Words backend. It's allow you to vote for yourself and know which is the house answer.",
+      "A small Android application that exploits a security vulnerability in the Use Your Words backend. It allows you to vote for yourself and identify the house answer.",
     skills: [
       { name: "Android", icon: "android.svg" },
       { name: "Java", icon: "java.svg" },
@@ -69,7 +69,7 @@ const projects = [
   {
     name: "epsic.burkhalter.dev",
     description:
-      "A website intended for my former classmates. It contains a summary of some of our first year of apprenticeship courses at EPSIC.",
+      "A website designed for my former classmates. It includes summaries of some of our first-year apprenticeship courses at EPSIC.",
     skills: [{ name: "Vue.js", icon: "vuejs.svg" }],
     image: "epsic-burkhalter-dev.png",
     links: [
@@ -86,7 +86,7 @@ const projects = [
   {
     name: "normalux.ch",
     description:
-      'A drawing mini game. You have to reproduce a model in only 45". There are a lot of modes, and exploring the gallery may be very funny!',
+      'A drawing mini-game where you have to replicate a model in just 45 seconds. It has many modes and exploring the gallery can be very funny!',
     skills: [
       { name: "PHP", icon: "php.svg" },
       { name: "CodeIgniter", icon: "codeigniter.svg" },
