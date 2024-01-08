@@ -16,7 +16,7 @@ const infos = [
   {
     name: "Discord",
     url: "https://discordapp.com/users/317230160124313610",
-    value: "aestetica",
+    value: "burkhalter",
   },
   {
     name: "Favorite browser",
@@ -33,7 +33,7 @@ const contacts = [
   },
   {
     name: "Discord",
-    profile: "aestetica",
+    profile: "burkhalter",
     icon: "discord.svg",
     link: "https://discordapp.com/users/317230160124313610",
   },
