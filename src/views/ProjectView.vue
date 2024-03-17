@@ -1,5 +1,4 @@
 <script setup>
-import Me from "@/views/Home/MeComponent.vue"
 import Project from "@/views/Home/ProjectComponent.vue"
 
 const projects = [
@@ -84,9 +83,9 @@ const projects = [
     ],
   },
   {
-    name: "normalux.ch",
+    name: "Normalux.ch",
     description:
-      'A drawing mini-game where you have to replicate a model in just 45 seconds. It has many modes and exploring the gallery can be very funny!',
+      "A drawing mini-game where you have to replicate a model in just 45 seconds. It has many modes and exploring the gallery can be very funny!",
     skills: [
       { name: "PHP", icon: "php.svg" },
       { name: "CodeIgniter", icon: "codeigniter.svg" },
@@ -99,12 +98,8 @@ const projects = [
 
 <template>
   <div>
-    <Me />
     <div v-for="(project, i) in projects" :key="i">
       <Project :project="project" :sequence="i" />
-    </div>
-    <div class="mb-4 text-center md:mb-0">
-      &copy; {{ new Date().getFullYear() }} Yannis Burkhalter
     </div>
   </div>
 </template>

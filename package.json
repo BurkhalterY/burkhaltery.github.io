@@ -10,7 +10,8 @@
   "dependencies": {
     "@heroicons/vue": "^2.0.18",
     "papercss": "^1.9.2",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.3.4",
