@@ -6,16 +6,23 @@ import { RouterLink, RouterView } from "vue-router"
 <template>
   <div class="container paper">
     <Me />
-    <div class="flex m-5 gap-5 text-center">
+    <div class="flex flex-col md:flex-row m-5 gap-5 text-center">
       <RouterLink
-        class="paper-btn btn-block"
+        class="paper-btn btn-block !mb-0"
         activeClass="btn-secondary"
         :to="{ name: 'Projects' }"
       >
         Projects
       </RouterLink>
       <RouterLink
-        class="paper-btn btn-block"
+        class="paper-btn btn-block !mb-0"
+        activeClass="btn-secondary"
+        :to="{ name: 'Works' }"
+      >
+        Work Experience
+      </RouterLink>
+      <RouterLink
+        class="paper-btn btn-block !mb-0"
         activeClass="btn-secondary"
         :to="{ name: 'Education' }"
       >

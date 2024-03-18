@@ -11,7 +11,7 @@ const schools = [
     image: "etml.svg",
   },
   {
-    school: "EPSIC - École Professionnelle",
+    school: "EPSIC - École Professionnelle Lausanne",
     start: 2018,
     end: 2022,
     certificate:
