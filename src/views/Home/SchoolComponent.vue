@@ -1,28 +1,27 @@
 <script setup>
 const props = defineProps({
-  school: Object,
-  sequence: Number,
+  item: Object,
 })
 </script>
 
 <template>
-  <div class="my-16 card bg-slate-50">
+  <div class="card bg-slate-50">
     <div class="flex gap-8">
       <div class="card-body">
         <img
-          :src="`/images/schools/${school.image}`"
-          :alt="school.school"
-          :title="school.school"
+          :src="`/images/schools/${item.image}`"
+          :alt="item.school"
+          :title="item.school"
           class="h-8 float-right !m-0"
         />
-        <h4 class="card-title">{{ school.certificate }}</h4>
+        <h4 class="card-title">{{ item.certificate }}</h4>
         <span class="card-text">
-          {{ school.school }}<br />
-          {{ school.start }} - {{ school.end }}
+          {{ item.school }}<br />
+          {{ item.start }} - {{ item.end }}
         </span>
         <div class="flex justify-center gap-5 p-5 md:justify-start">
           <img
-            v-for="skill in school.skills"
+            v-for="skill in item.skills"
             :key="skill.name"
             :src="`/images/skills/${skill.icon}`"
             :alt="skill.name"
