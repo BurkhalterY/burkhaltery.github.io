@@ -12,15 +12,15 @@ const props = defineProps({
           :src="`/images/companies/${item.image}`"
           :alt="item.comapny"
           :title="item.comapny"
-          class="h-8 float-right !m-0"
+          class="w-48 h-8 object-contain object-right float-right !m-0 !mb-2"
         />
         <h4 class="card-title">
           {{ item.company }}
           <span class="text-base ml-5">{{ item.location }}</span>
         </h4>
         <span class="card-text">
-          {{ item.title }}<br />
-          {{ item.start }} - {{ item.end }}
+          {{ item.title }}<br />{{ item.start }}
+          <component v-if="item.end">- {{ item.end }}</component>
         </span>
         <div class="flex justify-center gap-5 p-5 md:justify-start">
           <img

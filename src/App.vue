@@ -41,6 +41,48 @@ const items = [
     image: "etml.svg",
   },
   {
+    type: "school",
+    school: "Hodling SA",
+    start: 2023,
+    certificate: 'Workshop "Cryptocurrency for Integrators"',
+    image: "hodling.svg",
+    links: [
+      {
+        name: "Certificate of completion (PDF)",
+        url: "/files/hodling/Yannis_Burkhalter.pdf",
+      },
+    ],
+  },
+  {
+    type: "school",
+    school: "University at Buffalo, Coursera",
+    start: 2023,
+    certificate: "Blockchain Specialization",
+    image: "coursera.svg",
+    links: [
+      {
+        name: "Blockchain Specialization (PDF)",
+        url: "/files/coursera/Coursera_YNDT3WUCCLNL.pdf",
+      },
+      {
+        name: "Blockchain Basics (PDF)",
+        url: "/files/coursera/Coursera_FWW7QEELHEAB.pdf",
+      },
+      {
+        name: "Smart Contracts (PDF)",
+        url: "/files/coursera/Coursera_VT3GE86FALTU.pdf",
+      },
+      {
+        name: "Decentralized Applications (Dapps) (PDF)",
+        url: "/files/coursera/Coursera_EHJPNGZN6YEA.pdf",
+      },
+      {
+        name: "Blockchain Platforms (PDF)",
+        url: "/files/coursera/Coursera_44ZTXD65BK63.pdf",
+      },
+    ],
+  },
+  {
     type: "project",
     name: "etml.burkhalter.dev",
     description:
@@ -74,11 +116,6 @@ const items = [
     end: 2022,
     certificate:
       "Federal VET Diploma, Information Technologist, Specialism Application Development",
-    skills: [
-      { name: "Java", icon: "java.svg" },
-      { name: "C#", icon: "csharp.svg" },
-      { name: "Angular", icon: "angular.svg" },
-    ],
     image: "epsic.svg",
   },
   {

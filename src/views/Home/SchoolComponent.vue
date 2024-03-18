@@ -9,26 +9,24 @@ const props = defineProps({
     <div class="flex gap-8">
       <div class="card-body">
         <img
-          :src="`/images/schools/${item.image}`"
+          :src="`/images/companies/${item.image}`"
           :alt="item.school"
           :title="item.school"
-          class="h-8 float-right !m-0"
+          class="w-48 h-8 object-contain object-right float-right !m-0 !mb-2"
         />
         <h4 class="card-title">{{ item.certificate }}</h4>
         <span class="card-text">
-          {{ item.school }}<br />
-          {{ item.start }} - {{ item.end }}
+          {{ item.school }}<br />{{ item.start }}
+          <component v-if="item.end">- {{ item.end }}</component>
         </span>
-        <div class="flex justify-center gap-5 p-5 md:justify-start">
-          <img
-            v-for="skill in item.skills"
-            :key="skill.name"
-            :src="`/images/skills/${skill.icon}`"
-            :alt="skill.name"
-            :title="skill.name"
-            class="w-8 h-8 border"
-          />
-        </div>
+        <ul v-if="item.links" class="px-3 mt-3">
+          <li v-for="link in item.links" :key="link.name">
+            <a :href="link.url" target="_blank">
+              {{ link.name }}
+              <ArrowTopRightOnSquareIcon class="inline w-4" />
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
