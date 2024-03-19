@@ -1,84 +1,76 @@
 <script setup>
+import Item from "@/views/Home/ItemComponent.vue"
 import Me from "@/views/Home/MeComponent.vue"
-import Project from "@/views/Home/ProjectComponent.vue"
-import School from "@/views/Home/SchoolComponent.vue"
-import Work from "@/views/Home/WorkComponent.vue"
 import { reactive } from "vue"
 
-const components = {
-  work: Work,
-  school: School,
-  project: Project,
-}
 const actives = reactive({
   work: true,
-  school: true,
+  education: true,
   project: true,
 })
 
 const items = [
   {
     type: "work",
-    company: "Open Net Sàrl",
+    name: "Open Net Sàrl",
+    location: "Lausanne, Suisse",
     title: "Odoo Developer",
     start: 2021,
     end: "Today",
-    location: "Lausanne, Suisse",
+    image: "companies/open-net.png",
     skills: [
       { name: "Odoo", icon: "odoo.svg" },
       { name: "Python", icon: "python.svg" },
       { name: "Vue.js", icon: "vuejs.svg" },
     ],
-    image: "open-net.png",
   },
   {
-    type: "school",
+    type: "education",
+    name: "Vocational Baccalaureate (VB), Engineering, Architecture, Life Sciences",
     school: "ETML - École technique, École des métiers de Lausanne",
     start: 2022,
     end: 2024,
-    certificate:
-      "Vocational Baccalaureate (VB), Engineering, Architecture, Life Sciences",
-    image: "etml.svg",
+    image: "companies/etml.svg",
   },
   {
-    type: "school",
+    type: "education",
+    name: 'Workshop "Cryptocurrency for Integrators"',
     school: "Hodling SA",
-    start: 2023,
-    certificate: 'Workshop "Cryptocurrency for Integrators"',
-    image: "hodling.svg",
+    year: 2023,
+    image: "companies/hodling.svg",
     links: [
       {
-        name: "Certificate of completion (PDF)",
-        url: "/files/hodling/Yannis_Burkhalter.pdf",
+        name: "Certificate of completion",
+        url: "/files/hodling/yb-hodling.pdf",
       },
     ],
   },
   {
-    type: "school",
+    type: "education",
+    name: "Blockchain Specialization",
     school: "University at Buffalo, Coursera",
-    start: 2023,
-    certificate: "Blockchain Specialization",
-    image: "coursera.svg",
+    year: 2023,
+    image: "companies/coursera.svg",
     links: [
       {
-        name: "Blockchain Specialization (PDF)",
-        url: "/files/coursera/Coursera_YNDT3WUCCLNL.pdf",
+        name: "Blockchain Specialization",
+        url: "/files/coursera/yb-coursera-blockchain.pdf",
       },
       {
-        name: "Blockchain Basics (PDF)",
-        url: "/files/coursera/Coursera_FWW7QEELHEAB.pdf",
+        name: "Blockchain Basics",
+        url: "/files/coursera/yb-coursera-bc1.pdf",
       },
       {
-        name: "Smart Contracts (PDF)",
-        url: "/files/coursera/Coursera_VT3GE86FALTU.pdf",
+        name: "Smart Contracts",
+        url: "/files/coursera/yb-coursera-bc2.pdf",
       },
       {
-        name: "Decentralized Applications (Dapps) (PDF)",
-        url: "/files/coursera/Coursera_EHJPNGZN6YEA.pdf",
+        name: "Decentralized Applications (Dapps)",
+        url: "/files/coursera/yb-coursera-bc3.pdf",
       },
       {
-        name: "Blockchain Platforms (PDF)",
-        url: "/files/coursera/Coursera_44ZTXD65BK63.pdf",
+        name: "Blockchain Platforms",
+        url: "/files/coursera/yb-coursera-bc4.pdf",
       },
     ],
   },
@@ -88,12 +80,12 @@ const items = [
     description:
       'The "digitized" version of my diary from ETML, synchronized for the happiness of all my classmates.',
     year: 2023,
+    image: "projects/etml-burkhalter-dev.png",
     skills: [
       { name: "Vue.js", icon: "vuejs.svg" },
       { name: "Python", icon: "python.svg" },
       { name: "GraphQL", icon: "graphql.svg" },
     ],
-    image: "etml-burkhalter-dev.png",
     links: [
       {
         name: "etml.burkhalter.dev",
@@ -110,27 +102,36 @@ const items = [
     ],
   },
   {
-    type: "school",
+    type: "education",
+    name: "Federal VET Diploma, Information Technologist, Specialism Application Development",
     school: "EPSIC - École Professionnelle Lausanne",
     start: 2018,
     end: 2022,
-    certificate:
-      "Federal VET Diploma, Information Technologist, Specialism Application Development",
-    image: "epsic.svg",
+    image: "companies/epsic.svg",
+    links: [
+      {
+        name: "Federal VET Diploma",
+        url: "/files/epsic/yb-cfc.pdf",
+      },
+      {
+        name: "Gradebook",
+        url: "/files/epsic/yb-epsic-bulletin.pdf",
+      },
+    ],
   },
   {
     type: "work",
-    company: "Orif",
+    name: "Orif",
+    location: "Pomy, Aigle, Suisse",
     title: "Apprentice Developer",
     start: 2017,
     end: 2021,
-    location: "Pomy, Aigle, Suisse",
+    image: "companies/orif.jpg",
     skills: [
       { name: "Java", icon: "java.svg" },
       { name: "PHP", icon: "php.svg" },
       { name: "CodeIgniter", icon: "codeigniter.svg" },
     ],
-    image: "orif.jpg",
   },
   {
     type: "project",
@@ -138,8 +139,8 @@ const items = [
     description:
       'A fully functional battleship game with numerous additional features like "sonars" and "nuclear bombs".',
     year: 2019,
+    image: "projects/battleship.png",
     skills: [{ name: "C#", icon: "csharp.svg" }],
-    image: "battleship.png",
     links: [
       {
         name: "repository",
@@ -157,12 +158,12 @@ const items = [
     description:
       "A small Android application that exploits a security vulnerability in the Use Your Words backend. It allows you to vote for yourself and identify the house answer.",
     year: 2019,
+    image: "projects/use-your-cheats.png",
     skills: [
       { name: "Android", icon: "android.svg" },
       { name: "Java", icon: "java.svg" },
       { name: "JavaScript", icon: "javascript.svg" },
     ],
-    image: "use-your-cheats.png",
     links: [
       {
         name: "repository",
@@ -180,8 +181,8 @@ const items = [
     description:
       "A website designed for my former classmates. It includes summaries of some of our first-year apprenticeship courses at EPSIC.",
     year: 2018,
+    image: "projects/epsic-burkhalter-dev.png",
     skills: [{ name: "Vue.js", icon: "vuejs.svg" }],
-    image: "epsic-burkhalter-dev.png",
     links: [
       {
         name: "epsic.burkhalter.dev",
@@ -199,11 +200,11 @@ const items = [
     description:
       "A drawing mini-game where you have to replicate a model in just 45 seconds. It has many modes and exploring the gallery can be very funny!",
     year: 2018,
+    image: "projects/normalux.png",
     skills: [
       { name: "PHP", icon: "php.svg" },
       { name: "CodeIgniter", icon: "codeigniter.svg" },
     ],
-    image: "normalux.png",
     links: [{ name: "www.normalux.ch", url: "https://www.normalux.ch/" }],
   },
 ]
@@ -228,9 +229,9 @@ const items = [
         Work Experiences
       </button>
       <button
-        @click="actives.school = !actives.school"
+        @click="actives.education = !actives.education"
         class="paper-btn btn-block !mb-0"
-        :class="!actives.school ? 'btn-primary disabled' : 'btn-secondary'"
+        :class="!actives.education ? 'btn-primary disabled' : 'btn-secondary'"
       >
         Education
       </button>
@@ -241,11 +242,7 @@ const items = [
         :key="item"
         class="w-full"
       >
-        <component
-          :is="components[item.type]"
-          :item="item"
-          class="my-16 w-full"
-        />
+        <Item :item="item" class="my-16 w-full" />
       </div>
     </TransitionGroup>
     <div class="mb-4 text-center md:mb-0">
