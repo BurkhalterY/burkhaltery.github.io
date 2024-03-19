@@ -13,7 +13,7 @@ const props = defineProps({
       :src="`/images/${item.image}`"
       :alt="item.name"
       :title="item.name"
-      class="md:hidden"
+      class="sm:hidden"
     />
     <div class="flex gap-8">
       <img
@@ -21,21 +21,21 @@ const props = defineProps({
         :src="`/images/${item.image}`"
         :alt="item.name"
         :title="item.name"
-        class="hidden md:h-48 md:w-48 md:m-3 md:block lg:h-64 lg:w-64 lg:m-0"
+        class="hidden sm:m-0 sm:block sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64"
       />
       <div class="card-body relative flex flex-col gap-y-2">
-        <div class="flex justify-between">
-          <h4 class="!mb-0">
-            {{ item.name }}
-            <span class="text-base ml-5">{{ item.location }}</span>
-          </h4>
+        <div class="flex flex-col md:flex-row justify-between gap-y-2">
           <img
             v-if="item.type != 'project'"
             :src="`/images/${item.image}`"
             :alt="item.school || item.name"
             :title="item.school || item.name"
-            class="w-48 h-8 object-contain object-right float-right !m-0"
+            class="w-48 h-8 object-contain self-center md:align-top md:object-right !m-0 md:order-last"
           />
+          <h4 class="!mb-0 flex flex-col sm:flex-row gap-x-5">
+            {{ item.name }}
+            <span class="text-base">{{ item.location }}</span>
+          </h4>
         </div>
         <div>
           <div>{{ item.school || item.title }}</div>

@@ -17,7 +17,7 @@ const items = [
     title: "Odoo Developer",
     start: 2021,
     end: "Today",
-    image: "companies/open-net.png",
+    image: "companies/open-net.svg",
     skills: [
       { name: "Odoo", icon: "odoo.svg" },
       { name: "Python", icon: "python.svg" },
@@ -126,7 +126,7 @@ const items = [
     title: "Apprentice Developer",
     start: 2017,
     end: 2021,
-    image: "companies/orif.jpg",
+    image: "companies/orif.svg",
     skills: [
       { name: "Java", icon: "java.svg" },
       { name: "PHP", icon: "php.svg" },
