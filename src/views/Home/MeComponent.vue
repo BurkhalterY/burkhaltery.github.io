@@ -83,7 +83,7 @@ const contacts = [
           class="inline-block"
         >
           <img
-            :src="`/images/socials/${contact.icon}`"
+            :src="`/images/icons/${contact.icon}`"
             :alt="contact.name"
             :title="contact.profile"
             class="w-8 transition-transform no-border hover:scale-110"
