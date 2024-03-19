@@ -34,7 +34,7 @@ const props = defineProps({
           />
           <h4 class="!mb-0 flex flex-col sm:flex-row gap-x-5">
             {{ item.name }}
-            <span class="text-base">{{ item.location }}</span>
+            <span class="text-base align-middle">{{ item.location }}</span>
           </h4>
         </div>
         <div>
