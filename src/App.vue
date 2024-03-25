@@ -205,7 +205,16 @@ const items = [
       { name: "PHP", icon: "php.svg" },
       { name: "CodeIgniter", icon: "codeigniter.svg" },
     ],
-    links: [{ name: "www.normalux.ch", url: "https://www.normalux.ch/" }],
+    links: [
+      {
+        name: "www.normalux.ch",
+        url: "https://www.normalux.ch/",
+      },
+      {
+        name: "repository",
+        url: "https://github.com/BurkhalterY/normalux.ch",
+      },
+    ],
   },
 ]
 </script>
