@@ -78,7 +78,7 @@ const items = [
     type: "project",
     name: "etml.burkhalter.dev",
     description:
-      'The "digitized" version of my diary from ETML, synchronized for the happiness of all my classmates.',
+      'The "digitized" version of my agenda from ETML, synchronized for the happiness of all my classmates.',
     year: 2023,
     image: "projects/etml-burkhalter-dev.png",
     skills: [
