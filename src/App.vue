@@ -26,11 +26,17 @@ const items = [
   },
   {
     type: "education",
-    name: "Vocational Baccalaureate (VB), Engineering, Architecture, Life Sciences",
+    name: "Federal Vocational Baccalaureate (FVB), Engineering, Architecture, Life Sciences",
     school: "ETML - École technique, École des métiers de Lausanne",
     start: 2022,
     end: 2024,
     image: "companies/etml.svg",
+    links: [
+      {
+        name: "Federal Vocational Baccalaureate",
+        url: "/files/etml/yb-mp.pdf",
+      },
+    ],
   },
   {
     type: "education",
