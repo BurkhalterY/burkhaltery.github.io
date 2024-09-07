@@ -73,6 +73,7 @@ const contacts = [
             <template v-else>{{ info.value }}</template>
           </span>
         </li>
+        <li>I eat GPUs for breakfast.</li>
       </ul>
       <div class="flex justify-center gap-5">
         <a
