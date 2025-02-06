@@ -25,6 +25,15 @@ const items = [
     ],
   },
   {
+    type: "work",
+    name: "CPNV",
+    location: "Sainte-Croix, Suisse",
+    title: "Substitute Teacher",
+    start: 2025,
+    end: 2025,
+    image: "companies/cpnv.png",
+  },
+  {
     type: "education",
     name: "Federal Vocational Baccalaureate (FVB), Engineering, Architecture, Life Sciences",
     school: "ETML - École technique, École des métiers de Lausanne",
