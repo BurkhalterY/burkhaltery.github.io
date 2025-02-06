@@ -20,7 +20,7 @@ const infos = [
   },
   {
     name: "Favorite browser",
-    value: "Firefox",
+    value: "LibreWolf",
   },
 ]
 
