@@ -15,12 +15,13 @@ const infos = [
   },
   {
     name: "Discord",
-    url: "https://discordapp.com/users/317230160124313610",
     value: "burkhalter",
+    url: "https://discordapp.com/users/317230160124313610",
   },
   {
     name: "Favorite browser",
     value: "LibreWolf",
+    url: "https://librewolf.net/",
   },
 ]
 

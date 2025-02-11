@@ -22,3 +22,7 @@ a:visited {
 .fade-leave-active {
   position: absolute;
 }
+
+html.dark body {
+  background: #41403e;
+}

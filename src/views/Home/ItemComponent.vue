@@ -3,11 +3,15 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/20/solid"
 
 const props = defineProps({
   item: Object,
+  popup: Boolean,
 })
 </script>
 
 <template>
-  <div class="card bg-slate-50">
+  <div
+    class="card bg-slate-50 dark:bg-inherit"
+    :class="{ '!transform-none dark:bg-black': popup }"
+  >
     <img
       v-if="item.type == 'project'"
       :src="`/images/${item.image}`"

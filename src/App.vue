@@ -1,7 +1,7 @@
 <script setup>
 import Item from "@/views/Home/ItemComponent.vue"
 import Me from "@/views/Home/MeComponent.vue"
-import { reactive } from "vue"
+import { reactive, ref } from "vue"
 
 const actives = reactive({
   work: true,
@@ -14,8 +14,8 @@ const items = [
     type: "work",
     name: "Open Net Sàrl",
     location: "Lausanne, Suisse",
-    title: "Odoo Developer",
-    start: 2021,
+    title: "Senior Odoo Developer",
+    start: "08/2021",
     end: "Today",
     image: "companies/open-net.svg",
     skills: [
@@ -28,17 +28,20 @@ const items = [
     type: "work",
     name: "CPNV",
     location: "Sainte-Croix, Suisse",
-    title: "Substitute Teacher",
-    start: 2025,
-    end: 2025,
+    title: "Substitute Python Teacher",
+    start: "01/2025",
+    end: "03/2025",
+    description:
+      "Every Monday, I gave Python lessons to first year apprentice class.",
     image: "companies/cpnv.png",
+    skills: [{ name: "Python", icon: "python.svg" }],
   },
   {
     type: "education",
     name: "Federal Vocational Baccalaureate (FVB), Engineering, Architecture, Life Sciences",
     school: "ETML - École technique, École des métiers de Lausanne",
-    start: 2022,
-    end: 2024,
+    start: "08/2022",
+    end: "06/2024",
     image: "companies/etml.svg",
     links: [
       {
@@ -50,8 +53,8 @@ const items = [
   {
     type: "education",
     name: 'Workshop "Cryptocurrency for Integrators"',
-    school: "Hodling SA",
-    year: 2023,
+    school: "Hodling SA, Neuchâtel",
+    year: "10/2023",
     image: "companies/hodling.svg",
     links: [
       {
@@ -64,7 +67,8 @@ const items = [
     type: "education",
     name: "Blockchain Specialization",
     school: "University at Buffalo, Coursera",
-    year: 2023,
+    start: "08/2023",
+    end: "12/2023",
     image: "companies/coursera.svg",
     links: [
       {
@@ -120,8 +124,8 @@ const items = [
     type: "education",
     name: "Federal VET Diploma, Information Technologist, Specialism Application Development",
     school: "EPSIC - École Professionnelle Lausanne",
-    start: 2018,
-    end: 2022,
+    start: "08/2018",
+    end: "07/2022",
     image: "companies/epsic.svg",
     links: [
       {
@@ -139,8 +143,8 @@ const items = [
     name: "Orif",
     location: "Pomy, Aigle, Suisse",
     title: "Apprentice Developer",
-    start: 2017,
-    end: 2021,
+    start: "08/2017",
+    end: "07/2021",
     image: "companies/orif.svg",
     skills: [
       { name: "Java", icon: "java.svg" },
@@ -232,6 +236,8 @@ const items = [
     ],
   },
 ]
+
+const currentItem = ref(null)
 </script>
 
 <template>
@@ -266,11 +272,22 @@ const items = [
         :key="item"
         class="w-full"
       >
-        <Item :item="item" class="my-16 w-full" />
+        <Item :item="item" class="my-16 w-full" @click="currentItem = item" />
       </div>
     </TransitionGroup>
     <div class="mb-4 text-center md:mb-0">
       &copy; {{ new Date().getFullYear() }} Yannis Burkhalter
     </div>
+    <teleport to="body">
+      <div
+        v-if="currentItem"
+        @click="currentItem = null"
+        class="fixed inset-0 z-20 grid items-center justify-center px-4 py-8 overflow-y-auto bg-black bg-opacity-50"
+      >
+        <div @click.stop>
+          <Item :item="currentItem" :popup="true" />
+        </div>
+      </div>
+    </teleport>
   </div>
 </template>
