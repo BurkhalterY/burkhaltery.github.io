@@ -1,6 +1,6 @@
-# burkhaltery.github.io
+# [burkhaltery.github.io](https://burkhaltery.github.io/)
 
-(also available at burkhalter.dev)
+(also available at [burkhalter.dev](https://burkhalter.dev/))
 
 ## Installation
 
