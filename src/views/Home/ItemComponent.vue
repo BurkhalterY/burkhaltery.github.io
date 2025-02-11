@@ -8,10 +8,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div
-    class="card bg-slate-50 dark:bg-inherit"
-    :class="{ '!transform-none dark:bg-black': popup }"
-  >
+  <div class="card bg-slate-50" :class="{ '!transform-none ': popup }">
     <img
       v-if="item.type == 'project'"
       :src="`/images/${item.image}`"

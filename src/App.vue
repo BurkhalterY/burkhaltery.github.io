@@ -32,7 +32,7 @@ const items = [
     start: "01/2025",
     end: "03/2025",
     description:
-      "Every Monday, I gave Python lessons to first year apprentice class.",
+      "Every Monday, I gave Python lessons to a first year apprentice class.",
     image: "companies/cpnv.png",
     skills: [{ name: "Python", icon: "python.svg" }],
   },
