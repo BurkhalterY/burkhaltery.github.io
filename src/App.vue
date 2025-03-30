@@ -2,7 +2,7 @@
 import Item from "@/views/Home/ItemComponent.vue"
 import Me from "@/views/Home/MeComponent.vue"
 import { reactive, ref } from "vue"
-import items from "@/data/data.js"
+import items from "@/data/fr.js"
 
 const actives = reactive({
   work: true,
