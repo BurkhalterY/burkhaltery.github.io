@@ -2,7 +2,9 @@
 import Item from "@/views/Home/ItemComponent.vue"
 import Me from "@/views/Home/MeComponent.vue"
 import { reactive, ref } from "vue"
-import items from "@/data/fr.js"
+import { useRoute } from "vue-router"
+import en from "@/data/en"
+import fr from "@/data/fr"
 
 const actives = reactive({
   work: true,
@@ -10,6 +12,10 @@ const actives = reactive({
   project: true,
 })
 
+const route = useRoute()
+const locale = route.params.locale
+
+const items = ref({ en, fr })
 const currentItem = ref(null)
 </script>
 
@@ -41,7 +47,7 @@ const currentItem = ref(null)
     </div>
     <TransitionGroup name="fade">
       <div
-        v-for="(item, i) in items.filter((x) => actives[x.type])"
+        v-for="(item, i) in items[locale].filter((x) => actives[x.type])"
         :key="item"
         class="w-full"
       >
