@@ -19,7 +19,7 @@ export default [
     location: "Sainte-Croix, Suisse",
     title: "Substitute Python Teacher",
     start: "01/2025",
-    end: "03/2025",
+    end: "06/2025",
     description:
       "Every Monday, I gave Python lessons to a first year apprentice class.",
     image: "companies/cpnv.png",
