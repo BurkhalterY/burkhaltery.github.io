@@ -1,5 +1,4 @@
 import { createWebHistory, createRouter } from "vue-router"
-import { setI18nLanguage, SUPPORT_LOCALES } from "@/i18n"
 
 const routes = [
   {
@@ -15,9 +14,9 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  const paramsLocale = to.params.locale
+  const locale = to.params.locale
 
-  if (!SUPPORT_LOCALES.includes(paramsLocale)) {
+  if (!["en", "fr"].includes(locale)) {
     if (navigator.language.startsWith("fr")) {
       return next("/fr")
     } else {
@@ -25,7 +24,7 @@ router.beforeEach((to, from, next) => {
     }
   }
 
-  setI18nLanguage(paramsLocale)
+  document.querySelector("html").setAttribute("lang", locale)
   return next()
 })
 
