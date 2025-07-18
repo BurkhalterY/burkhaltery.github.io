@@ -3,7 +3,7 @@ export default [
     type: "work",
     name: "Open Net Sàrl",
     location: "Lausanne, Suisse",
-    title: "Senior Odoo Developer",
+    title: "Senior Odoo Analyst-Developer",
     start: "08/2021",
     end: "Today",
     image: "companies/open-net.svg",
@@ -17,7 +17,7 @@ export default [
     type: "work",
     name: "CPNV",
     location: "Sainte-Croix, Suisse",
-    title: "Substitute Python Teacher",
+    title: "Substitute IT Teacher",
     start: "01/2025",
     end: "06/2025",
     description:
@@ -155,7 +155,7 @@ export default [
     links: [
       {
         name: "repository",
-        url: "https://github.com/BurkhalterY/EPSIC_Bataille_Navale",
+        url: "https://github.com/BurkhalterY/EPSIC_Battleship",
       },
       {
         name: "direct download",
