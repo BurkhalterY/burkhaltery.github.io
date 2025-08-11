@@ -6,11 +6,22 @@ export default [
     title: "Senior Odoo Analyst-Developer",
     start: "08/2021",
     end: "Today",
+    description:
+      "At Open Net, I developed our CryptoSync modules and our EBICS 2.5 and 3.0 Python libraries.",
     image: "companies/open-net.svg",
     skills: [
       { name: "Odoo", icon: "odoo.svg" },
       { name: "Python", icon: "python.svg" },
       { name: "Vue.js", icon: "vuejs.svg" },
+    ],
+    links: [
+      {
+        name: "CryptoSync",
+        url: "https://www.open-net.ch/en/innovation/crypto",
+      },
+      {
+        name: "EBICS",
+      },
     ],
   },
   {
