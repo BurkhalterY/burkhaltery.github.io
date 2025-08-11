@@ -50,7 +50,7 @@ const props = defineProps({
         </div>
         <ul v-if="item.links" class="px-3">
           <li v-for="link in item.links" :key="link.name">
-            <a :href="link.url" target="_blank">
+            <a v-if="link.url" :href="link.url" target="_blank">
               {{ link.name }}
               <img
                 v-if="link.url.endsWith('.pdf')"
@@ -60,6 +60,7 @@ const props = defineProps({
               />
               <ArrowTopRightOnSquareIcon v-else class="inline h-4" />
             </a>
+            <span v-else>{{ link.name }}</span>
           </li>
         </ul>
         <div
