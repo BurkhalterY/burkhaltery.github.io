@@ -25,6 +25,15 @@ export default [
     ],
   },
   {
+    type: "education",
+    name: "Bachelor of Science (BSc) HES in Computer science and communication systems - Computer security",
+    school:
+      "HEIG-VD - Haute École d'Ingénierie et de Gestion du Canton de Vaud",
+    start: "09/2025",
+    end: "09/2029",
+    image: "companies/heig.svg",
+  },
+  {
     type: "work",
     name: "CPNV",
     location: "Sainte-Croix, Suisse",
