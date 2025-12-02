@@ -41,7 +41,7 @@ export default [
     start: "01/2025",
     end: "06/2025",
     description:
-      "One afternoon per week, I gave programming lessons the CPNV apprentices.",
+      "One afternoon per week, I gave programming lessons to the CPNV apprentices.",
     image: "companies/cpnv.png",
     skills: [
       { name: "Python", icon: "python.svg" },
