@@ -35,8 +35,8 @@ export default [
     image: "companies/leaderweb.svg",
     skills: [
       { name: "Vue.js", icon: "vuejs.svg" },
-      // { name: "Nuxt", icon: "nuxt.svg" },
-      // { name: "Shopify", icon: "shopify.svg" },
+      { name: "Nuxt", icon: "nuxt.svg" },
+      { name: "Shopify", icon: "shopify.svg" },
     ],
     links: [
       {
