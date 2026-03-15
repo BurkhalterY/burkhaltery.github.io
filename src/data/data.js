@@ -25,6 +25,27 @@ export default [
     ],
   },
   {
+    type: "work",
+    name: "Leader Web",
+    location: "Lausanne, Suisse",
+    title: "Founder & Developer",
+    start: "09/2025", // TODO
+    end: "Today",
+    description: "My freelance side quest",
+    image: "companies/leaderweb.svg",
+    skills: [
+      { name: "Vue.js", icon: "vuejs.svg" },
+      // { name: "Nuxt", icon: "nuxt.svg" },
+      // { name: "Shopify", icon: "shopify.svg" },
+    ],
+    links: [
+      {
+        name: "Leader Web",
+        url: "https://leaderweb.ch/",
+      },
+    ],
+  },
+  {
     type: "education",
     name: "Bachelor of Science (BSc) HES in Computer science and communication systems - Computer security",
     school:
