@@ -13,3 +13,6 @@ pnpm i
 ```bash
 pnpm dev
 ```
+## Credits
+
+Theme: [PaperCSS](https://www.getpapercss.com/)
