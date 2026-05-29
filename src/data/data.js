@@ -42,6 +42,7 @@ export default [
       },
       {
         name: "EBICS",
+        url: "https://www.open-net.ch/en/innovation/ebics",
       },
     ],
   },
