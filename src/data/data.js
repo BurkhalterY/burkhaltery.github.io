@@ -1,11 +1,32 @@
 export default [
   {
     type: "work",
+    name: "Leader Web Sàrl",
+    location: "Lausanne, Suisse",
+    title: "Founder & Developer",
+    start: "04/2026",
+    end: "Today",
+    description: "My new entrepreneurial quest",
+    image: "companies/leaderweb.svg",
+    skills: [
+      { name: "Vue.js", icon: "vuejs.svg" },
+      { name: "Nuxt", icon: "nuxt.svg" },
+      { name: "Shopify", icon: "shopify.svg" },
+    ],
+    links: [
+      {
+        name: "Leader Web",
+        url: "https://leaderweb.ch/",
+      },
+    ],
+  },
+  {
+    type: "work",
     name: "Open Net Sàrl",
     location: "Lausanne, Suisse",
     title: "Senior Odoo Analyst-Developer",
     start: "08/2021",
-    end: "Today",
+    end: "07/2026",
     description:
       "At Open Net, I developed our CryptoSync modules and our EBICS 2.5 and 3.0 Python libraries.",
     image: "companies/open-net.svg",
@@ -21,27 +42,6 @@ export default [
       },
       {
         name: "EBICS",
-      },
-    ],
-  },
-  {
-    type: "work",
-    name: "Leader Web",
-    location: "Lausanne, Suisse",
-    title: "Founder & Developer",
-    start: "09/2025", // TODO
-    end: "Today",
-    description: "My freelance side quest",
-    image: "companies/leaderweb.svg",
-    skills: [
-      { name: "Vue.js", icon: "vuejs.svg" },
-      { name: "Nuxt", icon: "nuxt.svg" },
-      { name: "Shopify", icon: "shopify.svg" },
-    ],
-    links: [
-      {
-        name: "Leader Web",
-        url: "https://leaderweb.ch/",
       },
     ],
   },
