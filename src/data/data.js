@@ -54,6 +54,10 @@ export default [
     start: "09/2025",
     end: "09/2029",
     image: "companies/heig.svg",
+    skills: [
+      { name: "C++", icon: "cpp.svg" },
+      { name: "C", icon: "c.svg" },
+    ],
   },
   {
     type: "work",
