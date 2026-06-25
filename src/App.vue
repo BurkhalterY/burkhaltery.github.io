@@ -5,9 +5,10 @@ import { reactive, ref } from "vue"
 import items from "@/data/data.js"
 
 const actives = reactive({
+  project: true,
   work: true,
   education: true,
-  project: true,
+  certification: true,
 })
 
 const currentItem = ref(null)
@@ -37,6 +38,13 @@ const currentItem = ref(null)
         :class="!actives.education ? 'btn-primary disabled' : 'btn-secondary'"
       >
         Education
+      </button>
+      <button
+        @click="actives.certification = !actives.certification"
+        class="paper-btn btn-block !mb-0"
+        :class="!actives.certification ? 'btn-primary disabled' : 'btn-secondary'"
+      >
+        Certifications
       </button>
     </div>
     <TransitionGroup name="fade">
