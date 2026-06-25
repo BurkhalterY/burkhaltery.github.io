@@ -73,7 +73,7 @@ const props = defineProps({
             :src="`/images/skills/${skill.icon}`"
             :alt="skill.name"
             :title="skill.name"
-            class="w-8 h-8 border"
+            class="w-8 h-8 border object-contain"
           />
         </div>
       </div>
