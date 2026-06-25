@@ -36,9 +36,9 @@ export default [
       { name: "Vue.js", icon: "vuejs.svg" },
       { name: "Owl", icon: "owl.svg" },
       { name: "EBICS", icon: "ebics.png" },
-      { name: "Bitcoin", icon: "bitcoin.png" },
-      { name: "Ethereum", icon: "ethereum.png" },
-      { name: "Tron", icon: "tron.png" },
+      { name: "Bitcoin", icon: "bitcoin.svg" },
+      { name: "Ethereum", icon: "ethereum.svg" },
+      { name: "Tron", icon: "tron.svg" },
     ],
     links: [
       {
