@@ -34,6 +34,11 @@ export default [
       { name: "Odoo", icon: "odoo.svg" },
       { name: "Python", icon: "python.svg" },
       { name: "Vue.js", icon: "vuejs.svg" },
+      { name: "Owl", icon: "owl.svg" },
+      { name: "EBICS", icon: "ebics.png" },
+      { name: "Bitcoin", icon: "bitcoin.png" },
+      { name: "Ethereum", icon: "ethereum.png" },
+      { name: "Tron", icon: "tron.png" },
     ],
     links: [
       {
@@ -94,6 +99,10 @@ export default [
     school: "Hodling SA, Neuchâtel",
     year: "10/2023",
     image: "companies/hodling.svg",
+    skills: [
+      { name: "Bitcoin", icon: "bitcoin.svg" },
+      { name: "Ethereum", icon: "ethereum.svg" },
+    ],
     links: [
       {
         name: "Certificate of completion",
@@ -108,6 +117,10 @@ export default [
     start: "08/2023",
     end: "12/2023",
     image: "companies/coursera.svg",
+    skills: [
+      { name: "Bitcoin", icon: "bitcoin.svg" },
+      { name: "Ethereum", icon: "ethereum.svg" },
+    ],
     links: [
       {
         name: "Blockchain Specialization",
@@ -165,6 +178,10 @@ export default [
     start: "08/2018",
     end: "07/2022",
     image: "companies/epsic.svg",
+    skills: [
+      { name: "Java", icon: "java.svg" },
+      { name: "C#", icon: "csharp.svg" },
+    ],
     links: [
       {
         name: "Federal VET Diploma",
