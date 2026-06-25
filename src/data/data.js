@@ -94,7 +94,7 @@ export default [
     ],
   },
   {
-    type: "certifications",
+    type: "certification",
     name: 'Workshop "Cryptocurrency for Integrators"',
     school: "Hodling SA, Neuchâtel",
     year: "10/2023",
@@ -111,7 +111,7 @@ export default [
     ],
   },
   {
-    type: "certifications",
+    type: "certification",
     name: "Blockchain Specialization",
     school: "University at Buffalo, Coursera",
     start: "08/2023",
